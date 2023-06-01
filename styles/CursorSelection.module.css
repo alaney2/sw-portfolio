@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'DeathStar';
+  src: url('/death-star/DeathStar.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Starjedi';
+  src: url('/starjedi/Starjedi.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Starjhol';
+  src: url('/starjedi/Starjhol.ttf') format('truetype');
+}
+
+.heading {
+  font-family: 'Starjhol', sans-serif;
+}
+
+.customCursor {
+  cursor: inherit;
+}
+
+.red {
+  background-color: #FF0000;
+}
+
+.red:hover {
+  border-color: #FF0000;
+}
+
+.blue {
+  background-color: #0077FF;
+}
+
+.blue:hover {
+  border-color: #0077FF;
+}
+
+.green {
+  background-color: #01EB14;
+}
+
+.green:hover {
+  border-color: #01EB14;
+}
+
+.purple {
+  background-color: #D000FF;
+}
+
+.purple:hover {
+  border-color: #D000FF;
+}
