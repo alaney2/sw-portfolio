@@ -19,7 +19,7 @@ export default function CursorSelection() {
       className={`text-3xl text-white  flex flex-col h-screen w-screen bg-black bg-cover bg-center justify-center items-center`}
       style={{ cursor: `url(${cursor}), auto` }}
     >
-      <h1 className={`${styles.heading} mb-8 text-center`}>Choose your lightsaber</h1>
+      <h1 className={`${styles.heading} mb-8 text-center`}>Choose wisely...</h1>
       <div className="flex flex-row mb-4">
         <button className={`${styles.blue} w-16 h-16 m-1 border-2 border-white rounded-md outline-none transition-colors duration-300 bg-blue-500 hover:border-blue-500`} onClick={() => handleCursorSelection('/blue-saber.cur')}></button>
         <button className={`${styles.red} w-16 h-16 m-1 border-2 border-white rounded-md outline-none transition-colors duration-300 bg-red-500 hover:border-red-500`} onClick={() => handleCursorSelection('/red-saber.cur')}></button>

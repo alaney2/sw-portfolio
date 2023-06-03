@@ -2,9 +2,7 @@
 export default function Contact({ mb }) {
   return (
     <div className={`mb-${mb}`}>
-      <button>
-        Click here        
-      </button>
+      <a href="mailto:alanyao.training@gmail.com">Transmit Hologram</a> 
     </div>
   );
 };

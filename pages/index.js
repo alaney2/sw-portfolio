@@ -8,7 +8,7 @@ export default function Home() {
   const { cursor, isCursorSelected } = useCursor();
   return (
     <div
-      className={`text-gray-100`}
+      className={`text-gray-300`}
       style={{ cursor: `url(${cursor}), auto` }}
     >
       <Head>

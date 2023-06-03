@@ -1,25 +1,26 @@
 import { jediOrSith } from "@/components/helpers";
 import { useCursor } from "@/components/CursorProvider";
+import styles from '@/styles/CursorSelection.module.css';
 
 
 export default function Nav() {
   const { cursor } = useCursor();
   const side = jediOrSith(cursor);
-    
+  
   return (
-    <div className={`flex flex-col mt-16`}>
-      <a href="" className='mb-2 text-sm'>
+    <nav className={`flex flex-col mt-16`}>
+      <a href="" className={`mb-4 text-[11px] tracking-wider uppercase font-semibold`}>
         The Force Within
       </a>
-      <a href="" className='mb-2 text-sm'>
-        Intergalactic Adventures
+      <a href="" className={`mb-4 text-[11px] tracking-wider uppercase font-semibold`}>
+        Galactic Adventures
       </a>
-      <a href="" className='mb-2 text-sm'>
-        {side === 'Jedi' ? 'Jedi Masterpieces' : 'Sith Masterpieces'}
+      <a href="" className={`mb-4 text-[11px] tracking-wider uppercase font-semibold`}>
+        {side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}
       </a>
-      <a href="" className='mb-2 text-sm'>
-        {side === 'Jedi' ? 'Contact the Resistance' : 'Contact the First Order'}
+      <a href="" className={`mb-4 text-[11px] tracking-wider uppercase font-semibold`}>
+        {side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}
       </a>
-    </div>
+    </nav>
   );
 };
