@@ -22,10 +22,10 @@ export default function Content() {
         </div>
         <div className={`hidden md:block md:col-start-1 md:col-end-2`}></div>
         <div className={`w-full md:w-auto`}>
-          <TheForceWithin />
-          <IntergalacticAdventures />
-          <Masterpieces />
-          <Contact />
+          <TheForceWithin mb={16} />
+          <IntergalacticAdventures mb={16} />
+          <Masterpieces mb={16} />
+          <Contact mb={16} />
         </div>
       </div>
     </div>

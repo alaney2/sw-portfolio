@@ -1,8 +1,10 @@
 
-export default function Contact() {
+export default function Contact({ mb }) {
   return (
-    <div>
-
+    <div className={`mb-${mb}`}>
+      <button>
+        Click here        
+      </button>
     </div>
   );
 };

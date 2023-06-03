@@ -2,7 +2,7 @@ import { jediOrSith } from "@/components/helpers";
 import { useCursor } from "@/components/CursorProvider";
 
 
-export default function Nav({ mb }) {
+export default function Nav() {
   const { cursor } = useCursor();
   const side = jediOrSith(cursor);
     
