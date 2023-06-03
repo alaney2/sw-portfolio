@@ -8,10 +8,13 @@ export const useCursor = () => {
 
 const CursorProvider = ({ children }) => {
   const [cursor, setCursor] = useState('');
+  const [isCursorSelected, setIsCursorSelected] = useState(false);
 
   const value = {
     cursor,
     setCursor,
+    isCursorSelected,
+    setIsCursorSelected,
   };
 
   return (

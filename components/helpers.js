@@ -10,3 +10,11 @@ export function cursorToColor(cursorFile) {
     return '#D000FF';
   }
 }
+
+export function jediOrSith(cursorFile) {
+  if (cursorFile === '/blue-saber.cur' || cursorFile === '/green-saber.cur' || cursorFile === '/purple-saber.cur') {
+    return 'Jedi';
+  } else if (cursorFile === '/red-saber.cur') {
+    return 'Sith';
+  }
+}

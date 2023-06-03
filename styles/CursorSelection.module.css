@@ -17,8 +17,12 @@
   font-family: 'Starjhol', sans-serif;
 }
 
-.customCursor {
-  cursor: inherit;
+.starJedi {
+  font-family: 'Starjedi', sans-serif;
+}
+
+.deathStar {
+  font-family: 'DeathStar', sans-serif;
 }
 
 .red {
