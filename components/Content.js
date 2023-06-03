@@ -9,18 +9,19 @@ import styles from '@/styles/CursorSelection.module.css';
 export default function Content() {
 
   return (
-    <div className={`h-screen w-screen bg-black bg-cover bg-center`}>
-      <div className="grid grid-cols-1 md:grid-cols-2 py-20 px-20">
-        <div className={`mx-auto flex-between flex flex-col h-full`}>
-          <h1 className={`${styles.starJedi} text-4xl mb-4`}>Alan Yao</h1>
-          <h2 className={`mb-4 text-md`}> Master of Computer Science at UIUC</h2>
-          <desc className={`text-gray-400 text-sm font-light mb-16`}> Bridging imagination and functionality with efficient code. </desc>
-          <Nav mb={8}/>
-          <div className="flex-grow"></div>
-          <Socials />
+    <div className={`mx-auto min-h-screen min-w-screen max-w-screen bg-black bg-cover bg-center py-20 px-20`}>
+      <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 px-20">
+        <div className={`mx-auto w-full md:w-[300px] justify-between flex flex-col fixed top-0 h-screen overflow-y-auto`}>
+          <div>
+            <h1 className={`${styles.starJedi} text-4xl mt-20`}>Alan Yao</h1>
+            <h2 className={`my-4 text-md`}> Master of Computer Science at UIUC</h2>
+            <desc className={`text-gray-400 text-sm font-light`}> Bridging imagination and functionality with efficient code. </desc>
+            <Nav/>
+          </div>
+          <Socials mb={16}/>
         </div>
-        <div>
-          asdasd
+        <div className={`hidden md:block md:col-start-1 md:col-end-2`}></div>
+        <div className={`w-full md:w-auto`}>
           <TheForceWithin />
           <IntergalacticAdventures />
           <Masterpieces />

@@ -7,17 +7,17 @@ export default function Nav({ mb }) {
   const side = jediOrSith(cursor);
     
   return (
-    <div className={`flex flex-col mb-${mb}`}>
-      <a href="" className='mb-1'>
+    <div className={`flex flex-col mt-16`}>
+      <a href="" className='mb-2 text-sm'>
         The Force Within
       </a>
-      <a href="" className='mb-1'>
+      <a href="" className='mb-2 text-sm'>
         Intergalactic Adventures
       </a>
-      <a href="" className='mb-1'>
+      <a href="" className='mb-2 text-sm'>
         {side === 'Jedi' ? 'Jedi Masterpieces' : 'Sith Masterpieces'}
       </a>
-      <a href="" className='mb-1'>
+      <a href="" className='mb-2 text-sm'>
         {side === 'Jedi' ? 'Contact the Resistance' : 'Contact the First Order'}
       </a>
     </div>
