@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from '@/styles/CursorSelection.module.css';
 import { useCursor } from '@/components/CursorProvider';
-import { cursorToColor } from '@/components/helpers';
+import { cursorToColor, borderColors } from '@/components/helpers';
 
 
 export default function CursorSelection() {
@@ -12,11 +12,13 @@ export default function CursorSelection() {
   function handleCursorSelection(cursorFile) {
     setCursor(cursorFile);
     setIsCursorClicked(true);
+    localStorage.setItem('cursor', cursorFile);
+    localStorage.setItem('isCursorSelected', 'true');
   }
-
+  
   return (
     <div
-      className={`text-3xl text-white  flex flex-col h-screen w-screen bg-black bg-cover bg-center justify-center items-center`}
+      className={`text-3xl text-white  flex flex-col h-screen w-screen bg-slate-950 bg-cover bg-center justify-center items-center`}
       style={{ cursor: `url(${cursor}), auto` }}
     >
       <h1 className={`${styles.heading} mb-16 text-center text-4xl`}>Choose wisely.</h1>
@@ -28,7 +30,7 @@ export default function CursorSelection() {
       </div>
       <div style={{ visibility: isCursorClicked ? 'visible' : 'hidden' }}>
         <button
-          className={`text-md mt-8 border-2 border-white text-white px-4 py-2 rounded-md outline-none transition-all delay-50 duration-1000 ${isCursorClicked ? 'opacity-100' : 'opacity-0'}`}
+          className={`text-md mt-8 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 text-gray-100 px-4 py-2 rounded-xl outline-none transition-all delay-50 duration-1000 ${isCursorClicked ? 'opacity-100' : 'opacity-0'}`}
           onClick={() => setIsCursorSelected(true)}
           style={{ color: isButtonHovered ? cursorToColor(cursor) : 'white' }}
           onMouseEnter={() => setIsButtonHovered(true)}

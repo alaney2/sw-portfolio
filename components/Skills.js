@@ -1,7 +1,4 @@
 
-
-import React from 'react';
-
 export default function Skills({ skills }) {
   return (
     <div className="flex flex-wrap gap-2">
