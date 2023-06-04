@@ -31,19 +31,19 @@ export default function Content() {
         </div>
         <div className={`hidden md:block md:col-start-1 md:col-end-2`}></div>
         <div className={`w-full md:w-auto`}>
-          <div className='mb-24 md:px-8 md:py-4' id="about">
+          <div className='mb-24 md:px-8 md:py-4 scroll-mt-24' id="about">
             <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>The Force Within</h1>
             <TheForceWithin />
           </div>
-          <div className='mb-36' id="experience">
+          <div className='mb-36 scroll-mt-24' id="experience">
             <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>Galactic Adventures</h1>
             <GalacticAdventures />
           </div>
-          <div className='mb-36' id="projects">
+          <div className='mb-36 scroll-mt-24' id="projects">
             <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}</h1>
             <Masterpieces />
           </div>
-          <div className='mb-36 md:mb-0 flex justify-center' id="contact">
+          <div className='mb-36 md:mb-0 flex justify-center scroll-mt-24' id="contact">
             <div className="flex flex-col justify-center items-center h-full">
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}</h1>
               <Contact />

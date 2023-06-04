@@ -8,7 +8,7 @@ export default function TheForceWithin({ mb }) {
   return (
     <div className={`mb-${mb} text-md leading-relaxed text-gray-400`}>
       <p className={`mb-5`}>
-        Greetings, fellow {side === 'Sith' ? 'Sith' : 'Jedi'}. I am a software engineer based in the Outer Rim Territories of the galaxy.
+        Greetings, I am a software engineer based in the Outer Rim Territories of the galaxy.
         Throughout my academic journey, I have had the opportunity to complete three internships at leading tech companies, where I honed my skills in various domains such as droid programming, hyperdrive optimization, and cloud city computing.
       </p>
 
