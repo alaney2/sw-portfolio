@@ -9,7 +9,9 @@ import styles from '@/styles/CursorSelection.module.css';
 import { jediOrSith } from "@/components/helpers";
 import { useCursor } from "@/components/CursorProvider";
 import Stars from '@/components/Stars';
+import Hologram from '@/components/Hologram';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Content() {
   const { cursor } = useCursor();
@@ -21,8 +23,8 @@ export default function Content() {
       <Stars count={100} />
       <div style={{ position: 'relative', zIndex: 1 }}>
         <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2">
-          <div className={`md:mx-auto w-full md:w-[360px] justify-between flex flex-col md:fixed top-0 md:h-screen overflow-y-auto`}>
-            <div>
+          <div className={`md:mx-auto w-full md:w-[360px] justify-between flex flex-col md:fixed top-0 md:h-screen overflow-y-hidden`}>
+            <div className="align-center items-center">
               <Link href="/">
                 <h1 className={`${styles.starJedi} text-4xl sm:text-5xl md:mt-24 tracking-widest text-gray-100`}>Alan Yao</h1>
               </Link>
@@ -31,6 +33,9 @@ export default function Content() {
               <div className="hidden md:flex">
                 <Nav />
               </div>
+            </div>
+            <div className="hidden md:flex grow relative w-64 pt-12">
+              <Hologram />
             </div>
             <div className="mb-24 mt-8">
               <Socials isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />

@@ -34,9 +34,64 @@ body {
   overflow-x: hidden;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
+.profile-pic {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  transition: all 0.2s;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+.profile-pic.animate {
+  animation: profile 0.8s linear forwards;
+}
+
+.profile-pic.show {
+  opacity: 0.8;
+}
+
+.profile-pic.hide {
+  transform: rotateZ(10deg) translateX(20vh);
+}
+
+@keyframes profile {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.loading-profile-pic {
+  position: relative;
+  bottom: -500px;
+  right: 50px;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+.loading-profile-pic.show {
+  animation: loading 0.8s linear forwards;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.8;
+  }
+  99% {
+    bottom: 0;
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}

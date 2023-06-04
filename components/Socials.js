@@ -24,8 +24,6 @@ const Modal = ({ onClose, children }) => {
 };
 
 export default function Socials({ isModalOpen, setIsModalOpen }) {
-  const { cursor } = useCursor();
-  const cursorColor = cursorToRGBA(cursor);
   const [showModal, setShowModal] = useState(false);
 
   const windowSize = useWindowSize();

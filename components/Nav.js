@@ -18,7 +18,7 @@ export default function Nav() {
       <a href="#projects" className={`mb-4 text-xs tracking-wider uppercase font-semibold ${textColors[cursor]} hover:text-opacity-80 transition duration-200`}>
         {side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}
       </a>
-      <a href="#contact" className={`mb-4 text-xs tracking-wider uppercase font-semibold ${textColors[cursor]} hover:text-opacity-80 transition duration-200`}>
+      <a href="#contact" className={`text-xs tracking-wider uppercase font-semibold ${textColors[cursor]} hover:text-opacity-80 transition duration-200`}>
         {side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}
       </a>
     </nav>
