@@ -1,7 +1,7 @@
 
-export default function Contact({ mb }) {
+export default function Contact() {
   return (
-    <div className={`mb-${mb}`}>
+    <div className={``}>
       <a href="mailto:alanyao.training@gmail.com">Transmit Hologram</a> 
     </div>
   );

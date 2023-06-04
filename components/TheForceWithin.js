@@ -6,10 +6,9 @@ export default function TheForceWithin({ mb }) {
   const side = jediOrSith(cursor);
 
   return (
-    <div className={`mb-${mb} text-sm`}>
-      <p className={`my-4`}>
+    <div className={`mb-${mb} text-md leading-relaxed text-gray-400`}>
+      <p className={`my-5`}>
       Greetings, fellow {side === 'Sith' ? 'Sith' : 'Jedi'}. I am a software engineer based in the Outer Rim Territories of the galaxy.
-      With a strong foundation in programming languages and software development, I am dedicated to creating innovative solutions that make a difference in the galaxy. 
       Throughout my academic journey, I have had the opportunity to complete three internships at leading tech companies, where I honed my skills in various domains such as droid programming, hyperdrive optimization, and cloud city computing.
       </p>
       <p>

@@ -9,17 +9,17 @@ import { RiFilePaper2Line } from 'react-icons/ri';
 
 export default function Socials({ mb }) {
   return (
-    <div className={`flex mb-${mb}`}>
-      <a href="https://github.com/alaney2" title="GitHub" className="text-xl mr-1.5 my-1.5">
+    <div className={`flex mb-24`}>
+      <a href="https://github.com/alaney2" title="GitHub" className="text-2xl mr-2 my-2">
         <FaGithubAlt />
       </a>
-      <a href="https://www.linkedin.com/in/alan-e-yao/" title="LinkedIn" className="text-xl m-1.5">
+      <a href="https://www.linkedin.com/in/alan-e-yao/" title="LinkedIn" className="text-2xl m-2">
         <FaLinkedinIn />
       </a>
-      <a href="https://www.kaggle.com/alaney2" title="Kaggle" className="text-lg m-1.5">
+      <a href="https://www.kaggle.com/alaney2" title="Kaggle" className="text-xl m-2">
         <FaKaggle />
       </a>
-      <a href="" title="Resume" className="text-xl m-1.5">
+      <a href="" title="Resume" className="text-2xl m-2">
         <RiFilePaper2Line />
       </a>
 

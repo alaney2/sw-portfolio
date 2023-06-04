@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
 
-export default function Masterpieces({ mb }) {
+export default function Masterpieces() {
   return (
-    <div className={`mb-${mb} flex flex-col`}>
+    <div className={`flex flex-col`}>
       <div className={`flex flex-row`}>
         <div className={`relative w-24`}>
           <Image 
