@@ -7,7 +7,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaKaggle } from 'react-icons/fa';
 import { RiFilePaper2Line } from 'react-icons/ri';
 
-export default function Socials({ mb }) {
+export default function Socials() {
   return (
     <div className={`flex mb-24`}>
       <a href="https://github.com/alaney2" title="GitHub" className="text-2xl mr-2 my-2">

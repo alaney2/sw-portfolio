@@ -9,16 +9,16 @@ export default function Nav() {
   
   return (
     <nav className={`flex flex-col mt-16`}>
-      <a href="" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
+      <a href="#about" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
         The Force Within
       </a>
-      <a href="" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
+      <a href="#experience" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
         Galactic Adventures
       </a>
-      <a href="" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
+      <a href="#projects" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
         {side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}
       </a>
-      <a href="" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
+      <a href="#contact" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
         {side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}
       </a>
     </nav>

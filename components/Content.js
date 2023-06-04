@@ -16,20 +16,24 @@ export default function Content() {
             <h1 className={`${styles.starJedi} text-5xl mt-24 tracking-widest text-gray-100`}>Alan Yao</h1>
             <h2 className={`my-4 text-lg text-gray-200`}> Master of Computer Science at UIUC</h2>
             <desc className={`text-gray-400 text-md font-light`}> Bridging imagination and functionality with efficient code. </desc>
-            <Nav/>
+            <Nav />
           </div>
           <Socials />
         </div>
         <div className={`hidden md:block md:col-start-1 md:col-end-2`}></div>
         <div className={`w-full md:w-auto`}>
-          <TheForceWithin />
-          <div className='mb-24'></div>
-          <GalacticAdventures />
-          <div className='mb-36'></div>
-          <Masterpieces />
-          <div className='mb-36'></div>
-          <Contact />
-          <div className='mb-24'></div>
+          <div className='mb-24' id="about">
+            <TheForceWithin />
+          </div>
+          <div className='mb-36' id="experience">
+            <GalacticAdventures />
+          </div>
+          <div className='mb-36' id="projects">
+            <Masterpieces />
+          </div>
+          <div className='justify-center align-center items-center text-center w-1/2' id="contact">
+            <Contact />
+          </div>
         </div>
       </div>
     </div>

@@ -6,15 +6,14 @@ export default function TheForceWithin({ mb }) {
   const side = jediOrSith(cursor);
 
   return (
-    <div className={`mb-${mb} text-md leading-relaxed text-gray-400`}>
-      <p className={`my-5`}>
+    <div className={`mb-${mb} text-md leading-relaxed text-gray-400 border px-8 py-4`}>
+      <p className={`mb-5`}>
       Greetings, fellow {side === 'Sith' ? 'Sith' : 'Jedi'}. I am a software engineer based in the Outer Rim Territories of the galaxy.
       Throughout my academic journey, I have had the opportunity to complete three internships at leading tech companies, where I honed my skills in various domains such as droid programming, hyperdrive optimization, and cloud city computing.
       </p>
+      
       <p>
-
       When I&apos;m not busy coding or practicing my lightsaber skills, I love to explore my creative side through hobbies like HoloNet photography and cantina music production.
-
       As an aspiring {side === 'Sith' ? 'Sith Lord' : 'Jedi Knight'}, I am driven by the desire to create meaningful and impactful solutions that improve lives across the galaxy.
       Don&apos;t hesitate to reach out if you&apos;d like to connect or discuss potential collaborations in our quest to restore balance to the Force.
       </p>
