@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
   return (
     <CursorProvider>
       <Component {...pageProps} />
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-RFE5ZF7N5N" />
+      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-RFE5ZF7N5N" />
       <Script
         id='google-analytics'
         strategy="afterInteractive"
