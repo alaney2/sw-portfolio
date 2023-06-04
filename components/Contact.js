@@ -7,7 +7,7 @@ export default function Contact() {
 
   return (
     <div className={`text-2xl`}>
-      <div className={`py-4 px-8 border-2 md:border-transparent rounded-xl ${borderColors[cursor]} hover:border-opacity-50 ${textColors[cursor]} transition duration-500`}>
+      <div className={`py-4 px-10 border-2 md:border-transparent rounded-xl ${borderColors[cursor]} hover:border-opacity-50 ${textColors[cursor]} transition duration-500`}>
         <a href="mailto:alanyao.training@gmail.com">Transmit Hologram</a>
       </div>
     </div>

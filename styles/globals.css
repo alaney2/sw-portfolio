@@ -15,35 +15,6 @@
   }
 }
 
-.zoom-enter {
-  opacity: 0;
-  transform: scale(0.9);
-}
-.zoom-enter-active {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 800ms, transform 800ms;
-}
-.zoom-exit {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.zoom-exit-active {
-  opacity: 0;
-  transform: scale(1.1);
-  transition: opacity 800ms, transform 800ms;
-}
-.zoom-content-enter {
-  opacity: 0;
-  transform: scale(0.9);
-}
-.zoom-content-enter-active {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 800ms, transform 800ms;
-}
-
 button {
   cursor: inherit;
 }

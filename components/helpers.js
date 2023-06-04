@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 
 export function cursorToColor(cursorFile) {
   if (cursorFile === '/blue-saber.cur') {
@@ -44,3 +46,26 @@ export const textColors = {
   '/green-saber.cur': 'hover:text-green-saber',
   '/purple-saber.cur': 'hover:text-purple-saber',
 }
+
+export const useWindowSize = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return windowSize;
+};

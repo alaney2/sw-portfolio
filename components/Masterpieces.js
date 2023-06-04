@@ -19,8 +19,8 @@ export default function Masterpieces() {
             </a>
           </div>
           <div className={`flex flex-row mb-6`}>
-            <div className={`relative w-2/5 mr-8 my-2`}>
-              <Image 
+            <div className={`relative w-2/5 mr-8 my-2 `}>
+              <Image
                 src="/datadrip.png"
                 alt="Data Drip"
                 width={300}
@@ -88,7 +88,6 @@ export default function Masterpieces() {
           <Skills skills={['React', 'Tailwind', 'chessboardjsx', 'chess.js']}/>
         </div>
       </a>
-
     </div>
   );
 };

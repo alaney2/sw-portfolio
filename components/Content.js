@@ -8,7 +8,7 @@ import styles from '@/styles/CursorSelection.module.css';
 import { jediOrSith } from "@/components/helpers";
 import { useCursor } from "@/components/CursorProvider";
 import Stars from '@/components/Stars';
-
+import Link from 'next/link';
 
 export default function Content() {
   const { cursor } = useCursor();
@@ -20,9 +20,11 @@ export default function Content() {
       <div style={{ position: 'relative', zIndex: 1 }}>
         <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2">
           <div className={`md:mx-auto w-full md:w-[360px] justify-between flex flex-col md:fixed top-0 md:h-screen overflow-y-auto`}>
-            <div className="">
-              <h1 className={`${styles.starJedi} text-4xl sm:text-5xl md:mt-24 tracking-widest text-gray-100`}>Alan Yao</h1>
-              <h2 className={`my-4 text-lg text-gray-200`}> Master of Computer Science at UIUC</h2>
+            <div>
+              <Link href="/">
+                <h1 className={`${styles.starJedi} text-4xl sm:text-5xl md:mt-24 tracking-widest text-gray-100`}>Alan Yao</h1>
+              </Link>
+              <h2 className={`my-5 text-lg text-gray-200`}> Master of Computer Science at UIUC</h2>
               <desc className={`text-gray-400 text-md font-light`}> Bridging imagination and functionality with efficient code. </desc>
               <div className="hidden md:flex">
                 <Nav />
