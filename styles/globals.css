@@ -61,6 +61,10 @@ a {
   transform: rotateZ(10deg) translateX(20vh);
 }
 
+.profile-pic.hidden {
+  display: none;
+}
+
 @keyframes profile {
   99% {
     opacity: 0;
@@ -81,6 +85,10 @@ a {
 
 .loading-profile-pic.show {
   animation: loading 0.8s linear forwards;
+}
+
+.loading-profile-pic.hidden {
+  display: none;
 }
 
 @keyframes loading {

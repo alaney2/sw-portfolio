@@ -20,7 +20,7 @@ export default function Hologram() {
         alt="Hologram"
         width={200}
         height={200}
-        className={`profile-pic ${inView ? (!init ? 'animate' : 'show') : init ? 'hide' : ''}`}
+        className={`profile-pic ${inView ? (!init ? 'animate' : 'show') : init ? 'hide' : 'hidden'}`}
       />
 
       <Image
@@ -29,7 +29,7 @@ export default function Hologram() {
         alt="Hologram"
         width={200}
         height={200}
-        className={`loading-profile-pic ${inView && !init ? 'show' : ''}`}
+        className={`loading-profile-pic ${inView && !init ? 'show' : 'hidden'}`}
       />
     </div>
   );

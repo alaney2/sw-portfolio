@@ -34,7 +34,7 @@ export default function Content() {
                 <Nav />
               </div>
             </div>
-            <div className="hidden md:flex grow relative w-64 pt-12">
+            <div className="hidden md:flex grow relative w-64 pt-16">
               <Hologram />
             </div>
             <div className="mb-24 mt-8">
