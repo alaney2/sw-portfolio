@@ -1,6 +1,6 @@
 import { jediOrSith } from "@/components/helpers";
 import { useCursor } from "@/components/CursorProvider";
-import styles from '@/styles/CursorSelection.module.css';
+import { textColors } from '@/components/helpers';
 
 
 export default function Nav() {
@@ -9,16 +9,16 @@ export default function Nav() {
   
   return (
     <nav className={`flex flex-col mt-16`}>
-      <a href="#about" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
+      <a href="#about" className={`mb-4 text-xs tracking-wider uppercase font-semibold ${textColors[cursor]} hover:text-opacity-80 transition duration-200`}>
         The Force Within
       </a>
-      <a href="#experience" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
+      <a href="#experience" className={`mb-4 text-xs tracking-wider uppercase font-semibold ${textColors[cursor]} hover:text-opacity-80 transition duration-200`}>
         Galactic Adventures
       </a>
-      <a href="#projects" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
+      <a href="#projects" className={`mb-4 text-xs tracking-wider uppercase font-semibold ${textColors[cursor]} hover:text-opacity-80 transition duration-200`}>
         {side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}
       </a>
-      <a href="#contact" className={`mb-4 text-xs tracking-wider uppercase font-semibold`}>
+      <a href="#contact" className={`mb-4 text-xs tracking-wider uppercase font-semibold ${textColors[cursor]} hover:text-opacity-80 transition duration-200`}>
         {side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}
       </a>
     </nav>

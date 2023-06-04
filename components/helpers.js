@@ -37,3 +37,10 @@ export const borderColors = {
   '/green-saber.cur': 'hover:border-green-saber',
   '/purple-saber.cur': 'hover:border-purple-saber',
 }
+
+export const textColors = {
+  '/blue-saber.cur': 'hover:text-blue-saber',
+  '/red-saber.cur': 'hover:text-red-saber',
+  '/green-saber.cur': 'hover:text-green-saber',
+  '/purple-saber.cur': 'hover:text-purple-saber',
+}

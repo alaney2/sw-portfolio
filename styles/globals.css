@@ -9,6 +9,12 @@
   cursor: inherit;
 }
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 button {
   cursor: inherit;
 }
