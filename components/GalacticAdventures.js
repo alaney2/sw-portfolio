@@ -1,11 +1,15 @@
-import styles from '@/styles/CursorSelection.module.css';
 import Skills from '@/components/Skills';
+import { useCursor } from "@/components/CursorProvider";
+import { borderColors } from '@/components/helpers';
+
 
 export default function GalacticAdventures() {
+  const { cursor } = useCursor();
+
   return (
     <div className={`flex flex-col text-gray-400`}>
       <a href="https://www.servicenow.com" target="_blank" rel="noopener noreferrer" className='md:mt-10'>
-        <div className={`flex flex-row border rounded-xl md:px-8 py-6`}>
+        <div className={`flex flex-row border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 rounded-xl md:px-8 py-6`}>
           <div className={`text-xs mt-1.5 mr-6 tracking-wider uppercase w-1/4`}>
             May - Aug 2023
           </div>
@@ -22,7 +26,7 @@ export default function GalacticAdventures() {
       </a>
       
       <a href="https://www.servicenow.com" target="_blank" rel="noopener noreferrer" className='md:mt-10'>
-        <div className={`flex flex-row border rounded-xl md:px-8 py-6`}>
+        <div className={`flex flex-row border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 rounded-xl md:px-8 py-6`}>
           <div className={`text-xs mt-1.5 mr-6 tracking-wider uppercase w-1/4`}>
             May - Aug 2022
           </div>
@@ -40,7 +44,7 @@ export default function GalacticAdventures() {
       </a>
 
       <a href="https://www.intuit.com" target="_blank" rel="noopener noreferrer" className='md:mt-10'>
-        <div className={`flex flex-row border rounded-xl md:px-8 py-6`}>
+        <div className={`flex flex-row border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 rounded-xl md:px-8 py-6`}>
           <div className={`text-xs mt-1.5 mr-6 tracking-wider uppercase w-1/4`}>
             May - Aug 2021
           </div>
@@ -58,7 +62,7 @@ export default function GalacticAdventures() {
       </a>
 
       <a href="https://www.cs.illinois.edu" target="_blank" rel="noopener noreferrer" className='md:mt-20'>
-        <div className={`flex flex-row border rounded-xl md:px-8 py-4`}>
+        <div className={`flex flex-row border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 rounded-xl md:px-8 py-4`}>
           <div className={`text-xs mt-1.5 mr-6 tracking-wider uppercase w-1/4`}>
             2023 - 2024
           </div>
@@ -70,7 +74,7 @@ export default function GalacticAdventures() {
       </a>
 
       <a href="https://www.stat.illinois.edu" target="_blank" rel="noopener noreferrer" className='md:mt-4'>
-        <div className={`flex flex-row border rounded-xl md:px-8 py-4`}>
+        <div className={`flex flex-row border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 rounded-xl md:px-8 py-4`}>
           <div className={`text-xs mt-1.5 mr-6 tracking-wider uppercase w-1/4`}>
             2020 - 2023
           </div>

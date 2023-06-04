@@ -13,6 +13,15 @@ button {
   cursor: inherit;
 }
 
+.icon {
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 html,
 body {
   max-width: 100vw;

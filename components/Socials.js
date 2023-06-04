@@ -2,24 +2,29 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaGithubAlt } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
-
 import { FaLinkedin } from 'react-icons/fa';
 import { FaKaggle } from 'react-icons/fa';
 import { RiFilePaper2Line } from 'react-icons/ri';
+import { useCursor } from "@/components/CursorProvider";
+import { borderColors, cursorToColor, cursorToRGBA } from '@/components/helpers';
+
 
 export default function Socials() {
+  const { cursor } = useCursor();
+  const cursorColor = cursorToRGBA(cursor);
+
   return (
     <div className={`flex`}>
-      <a href="https://github.com/alaney2" title="GitHub" className="text-2xl mr-2 my-2">
+      <a href="https://github.com/alaney2" title="GitHub" className="text-2xl mr-2 my-2 icon">
         <FaGithubAlt />
       </a>
-      <a href="https://www.linkedin.com/in/alan-e-yao/" title="LinkedIn" className="text-2xl m-2">
+      <a href="https://www.linkedin.com/in/alan-e-yao/" title="LinkedIn" className="text-2xl m-2 icon">
         <FaLinkedinIn />
       </a>
-      <a href="https://www.kaggle.com/alaney2" title="Kaggle" className="text-xl m-2">
+      <a href="https://www.kaggle.com/alaney2" title="Kaggle" className="text-xl m-2 icon">
         <FaKaggle />
       </a>
-      <a href="" title="Resume" className="text-2xl m-2">
+      <a href="" title="Resume" className="text-2xl m-2 icon">
         <RiFilePaper2Line />
       </a>
 

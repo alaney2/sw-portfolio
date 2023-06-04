@@ -1,6 +1,7 @@
 import { jediOrSith } from "@/components/helpers";
 import { useCursor } from "@/components/CursorProvider";
 
+
 export default function TheForceWithin({ mb }) {
   const { cursor } = useCursor();
   const side = jediOrSith(cursor);

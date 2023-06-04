@@ -11,10 +11,29 @@ export function cursorToColor(cursorFile) {
   }
 }
 
+export function cursorToRGBA(cursorFile) {
+  if (cursorFile === '/blue-saber.cur') {
+    return 'rgba(0, 119, 255, 0.5)';
+  } else if (cursorFile === '/red-saber.cur') {
+    return 'rgba(255, 0, 0, 0.6)';
+  } else if (cursorFile === '/green-saber.cur') {
+    return 'rgba(1, 235, 20, 0.5)';
+  } else if (cursorFile === '/purple-saber.cur') {
+    return 'rgba(208, 0, 255, 0.5)';
+  }
+}
+
 export function jediOrSith(cursorFile) {
   if (cursorFile === '/blue-saber.cur' || cursorFile === '/green-saber.cur' || cursorFile === '/purple-saber.cur') {
     return 'Jedi';
   } else if (cursorFile === '/red-saber.cur') {
     return 'Sith';
   }
+}
+
+export const borderColors = {
+  '/blue-saber.cur': 'hover:border-blue-saber',
+  '/red-saber.cur': 'hover:border-red-saber',
+  '/green-saber.cur': 'hover:border-green-saber',
+  '/purple-saber.cur': 'hover:border-purple-saber',
 }

@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Header from '@/components/Header';
 import CursorSelection from '@/components/CursorSelection';
 import Content from '@/components/Content';
 import { useCursor } from '@/components/CursorProvider';
+
 
 export default function Home() {
   const { cursor, isCursorSelected } = useCursor();
@@ -18,9 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      {/* {!isCursorSelected && <CursorSelection />} */}
-      {/* {isCursorSelected && <Content />} */}
-      <Content />
+      {!isCursorSelected && <CursorSelection />}
+      {isCursorSelected && <Content />}
+      
     </div>
-  )
-}
+  );
+};
