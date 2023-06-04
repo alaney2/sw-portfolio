@@ -4,7 +4,7 @@ import Skills from '@/components/Skills';
 export default function Masterpieces() {
   return (
     <div className={`flex flex-col text-gray-400`}>
-      <div className={`flex flex-col border-2 px-8 py-6`}>
+      <div className={`flex flex-col border-2 md:px-8 py-6`}>
         <h1 className={`text-gray-300 mb-4`}>Data Drip</h1>
         <div className={`flex flex-row mb-6`}>
           <div className={`relative w-2/5 mr-8 my-2`}>
@@ -22,7 +22,7 @@ export default function Masterpieces() {
         <Skills skills={['NextJS', 'MUI', 'Google Sheets', 'Redis', 'OpenAI']}/>
       </div>
 
-      <div className={`flex flex-col border-2 px-8 py-6 mt-10`}>
+      <div className={`flex flex-col border-2 md:px-8 py-6 md:mt-10`}>
         <h1 className={`text-gray-300 mb-4`}>Segway PID</h1>
         <div className={`flex flex-row mb-6`}>
           <div className={`relative w-2/5 mr-8 my-2`}>
@@ -42,7 +42,7 @@ export default function Masterpieces() {
         <Skills skills={['Rust', 'Macroquad', 'egui']}/>
       </div>
 
-      <div className={`flex flex-col border-2 px-8 py-6 mt-10`}>
+      <div className={`flex flex-col border-2 md:px-8 py-6 md:mt-10`}>
         <h1 className={`text-gray-300 mb-4`}>Tactics Ninja</h1>
         <div className={`flex flex-row mb-6`}>
           <div className={`relative w-2/5 mr-8 my-2`}>

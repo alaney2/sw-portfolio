@@ -4,7 +4,7 @@ import Skills from '@/components/Skills';
 export default function GalacticAdventures() {
   return (
     <div className={`flex flex-col text-gray-400`}>
-      <div className={`flex flex-row mt-12 border px-8 py-6`}>
+      <div className={`flex flex-row md:mt-12 border md:px-8 py-6`}>
         <div className={`text-xs mt-1.5 mr-6 tracking-wider uppercase w-1/4`}>
           May - Aug 2023
         </div>
@@ -19,7 +19,7 @@ export default function GalacticAdventures() {
         </div>
       </div>
 
-      <div className={`flex flex-row mt-10 border px-8 py-6`}>
+      <div className={`flex flex-row md:mt-10 border md:px-8 py-6`}>
         <div className={`text-xs mt-1.5 mr-6 tracking-wider uppercase w-1/4`}>
           May - Aug 2022
         </div>
@@ -35,7 +35,7 @@ export default function GalacticAdventures() {
         </div>
       </div>
 
-      <div className={`flex flex-row mt-10 border px-8 py-6`}>
+      <div className={`flex flex-row md:mt-10 border md:px-8 py-6`}>
         <div className={`text-xs mt-1.5 mr-6 tracking-wider uppercase w-1/4`}>
           May - Aug 2021
         </div>
@@ -51,7 +51,7 @@ export default function GalacticAdventures() {
         </div>
       </div>
 
-      <div className={`flex flex-row mt-20 border px-8 py-4`}>
+      <div className={`flex flex-row mt-10 md:mt-20 border md:px-8 py-4`}>
         <div className={`text-xs mt-1.5 mr-6 tracking-wider uppercase w-1/4`}>
           2023 - 2024
         </div>
@@ -61,7 +61,7 @@ export default function GalacticAdventures() {
         </div>
       </div>
 
-      <div className={`flex flex-row mt-10 border px-8 py-4`}>
+      <div className={`flex flex-row md:mt-10 border md:px-8 py-4`}>
         <div className={`text-xs mt-1.5 mr-6 tracking-wider uppercase w-1/4`}>
           2020 - 2023
         </div>

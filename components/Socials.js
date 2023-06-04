@@ -9,7 +9,7 @@ import { RiFilePaper2Line } from 'react-icons/ri';
 
 export default function Socials() {
   return (
-    <div className={`flex mb-24`}>
+    <div className={`flex`}>
       <a href="https://github.com/alaney2" title="GitHub" className="text-2xl mr-2 my-2">
         <FaGithubAlt />
       </a>
