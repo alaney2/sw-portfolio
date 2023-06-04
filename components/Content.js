@@ -14,7 +14,7 @@ export default function Content() {
   const side = jediOrSith(cursor);
 
   return (
-    <div className={`mx-auto min-h-screen min-w-screen max-w-screen bg-slate-950 bg-cover bg-center py-12 md:py-24 px-8 md:px-20`}>
+    <div className={`mx-auto min-h-screen min-w-screen max-w-screen bg-slate-950 bg-cover bg-center py-12 md:py-16 lg:py-24 px-8 md:px-12 lg:px-20`}>
       <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2">
         <div className={`md:mx-auto w-full md:w-[360px] justify-between flex flex-col md:fixed top-0 md:h-screen overflow-y-auto`}>
           <div className="">
@@ -31,7 +31,7 @@ export default function Content() {
         </div>
         <div className={`hidden md:block md:col-start-1 md:col-end-2`}></div>
         <div className={`w-full md:w-auto`}>
-          <div className='mb-24 md:px-8 md:py-4 scroll-mt-24' id="about">
+          <div className='mb-24 xl:px-8 md:py-4 scroll-mt-24' id="about">
             <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>The Force Within</h1>
             <TheForceWithin />
           </div>
