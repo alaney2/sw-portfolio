@@ -3,12 +3,10 @@ import Head from 'next/head'
 import CursorSelection from '@/components/CursorSelection';
 import Content from '@/components/Content';
 import { useCursor } from '@/components/CursorProvider';
-import { CSSTransition } from 'react-transition-group';
 
 
 export default function Home() {
   const { cursor, setCursor, isCursorSelected, setIsCursorSelected } = useCursor();
-  const [playAnimation, setPlayAnimation] = useState(true);
   const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
@@ -19,14 +17,13 @@ export default function Home() {
     }
     if (storedIsCursorSelected === 'true') {
       setIsCursorSelected(true);
-      setPlayAnimation(false);
     }
     setIsInitialized(true);
   }, [setCursor, setIsCursorSelected]);
 
   return (
     <div
-      className={`text-gray-300`}
+      className={`text-gray-300 `}
       style={{ cursor: `url(${cursor}), auto` }}
     >
       <Head>
@@ -35,33 +32,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <div className="bg-slate-950">
       {isInitialized && (
         <>
-          {!isCursorSelected && playAnimation && (
-            <CSSTransition
-              in={!isCursorSelected}
-              timeout={300}
-              classNames="zoom"
-              unmountOnExit
-            >
-              <CursorSelection />
-            </CSSTransition>
+          {!isCursorSelected && (
+            <CursorSelection />
           )}
           {isCursorSelected && (
-            <CSSTransition
-              in={isCursorSelected}
-              timeout={300}
-              classNames="zoom-content"
-              unmountOnExit
-            >
-              <Content />
-            </CSSTransition>
+            <Content />
           )}
         </>
       )}
-      </div>
     </div>
   );
 };
