@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Skills from '@/components/Skills';
 import { useCursor } from "@/components/CursorProvider";
 import { borderColors } from '@/components/helpers';
+import { FaCode } from 'react-icons/fa';
+
 
 export default function Masterpieces() {
   const { cursor } = useCursor();
@@ -10,7 +12,12 @@ export default function Masterpieces() {
     <div className={`flex flex-col text-gray-400`}>
       <a href="https://www.datadrip.cafe" target="_blank" rel="noopener" className='md:mt-10'>
         <div className={`flex flex-col rounded-xl xl:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
-          <h1 className={`text-gray-300 mb-4`}>Data Drip</h1>
+          <div className='flex'>
+            <h1 className={`text-gray-300 mb-4 mr-6`}>Data Drip</h1>
+            <a href="https://github.com/alaney2/datadrip" title="Code" target="_blank" rel="noopener noreferrer" className="text-2xl icon">
+              <FaCode />
+            </a>
+          </div>
           <div className={`flex flex-row mb-6`}>
             <div className={`relative w-2/5 mr-8 my-2`}>
               <Image 
@@ -30,7 +37,12 @@ export default function Masterpieces() {
 
       <a href="https://segway-pid.vercel.app" target="_blank" rel="noopener" className='md:mt-10'>
         <div className={`flex flex-col rounded-xl xl:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
-          <h1 className={`text-gray-300 mb-4`}>Segway PID</h1>
+          <div className='flex'>
+            <h1 className={`text-gray-300 mb-4 mr-6`}>Segway PID</h1>
+            <a href="https://github.com/alaney2/segway-pid" title="Code" target="_blank" rel="noopener noreferrer" className="text-2xl icon">
+              <FaCode />
+            </a>
+          </div>
           <div className={`flex flex-row mb-6`}>
             <div className={`relative w-2/5 mr-8 my-2`}>
               <Image 
@@ -52,7 +64,12 @@ export default function Masterpieces() {
 
       <a href="https://tactics-ninja.vercel.app" target="_blank" rel="noopener" className='md:mt-10'>
         <div className={`flex flex-col rounded-xl xl:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
-          <h1 className={`text-gray-300 mb-4`}>Tactics Ninja</h1>
+          <div className='flex'>
+            <h1 className={`text-gray-300 mb-4 mr-6`}>Tactics Ninja</h1>
+            <a href="https://github.com/alaney2/tactics-ninja" title="Code" target="_blank" rel="noopener noreferrer" className="text-2xl icon">
+              <FaCode />
+            </a>
+          </div>
           <div className={`flex flex-row mb-6`}>
             <div className={`relative w-2/5 mr-8 my-2`}>
               <Image
