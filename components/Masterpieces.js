@@ -8,7 +8,7 @@ export default function Masterpieces() {
 
   return (
     <div className={`flex flex-col text-gray-400`}>
-      <a href="https://www.datadrip.cafe" target="_blank" rel="noopener noreferrer" className='md:mt-10'>
+      <a href="https://www.datadrip.cafe" target="_blank" rel="noopener" className='md:mt-10'>
         <div className={`flex flex-col rounded-xl md:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
           <h1 className={`text-gray-300 mb-4`}>Data Drip</h1>
           <div className={`flex flex-row mb-6`}>
@@ -28,7 +28,7 @@ export default function Masterpieces() {
         </div>
       </a>
 
-      <a href="https://segway-pid.vercel.app" target="_blank" rel="noopener noreferrer" className='md:mt-10'>
+      <a href="https://segway-pid.vercel.app" target="_blank" rel="noopener" className='md:mt-10'>
         <div className={`flex flex-col border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300 rounded-xl md:px-8 py-6`}>
           <h1 className={`text-gray-300 mb-4`}>Segway PID</h1>
           <div className={`flex flex-row mb-6`}>
@@ -50,7 +50,7 @@ export default function Masterpieces() {
         </div>
       </a>
 
-      <a href="https://tactics-ninja.vercel.app" target="_blank" rel="noopener noreferrer" className='md:mt-10'>
+      <a href="https://tactics-ninja.vercel.app" target="_blank" rel="noopener" className='md:mt-10'>
         <div className={`flex flex-col rounded-xl md:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
           <h1 className={`text-gray-300 mb-4`}>Tactics Ninja</h1>
           <div className={`flex flex-row mb-6`}>
