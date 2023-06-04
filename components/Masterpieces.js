@@ -5,7 +5,7 @@ import { borderColors } from '@/components/helpers';
 import { FaCode } from 'react-icons/fa';
 
 
-export default function Masterpieces() {
+export default function Masterpieces({ isModalOpen }) {
   const { cursor } = useCursor();
 
   return (
@@ -19,8 +19,9 @@ export default function Masterpieces() {
             </a>
           </div>
           <div className={`flex flex-row mb-6`}>
-            <div className={`relative w-2/5 mr-8 my-2 `}>
+            <div className={`relative w-2/5 mr-8 my-2`}>
               <Image
+                style={{ visibility: isModalOpen ? 'hidden' : 'visible' }}
                 src="/datadrip.png"
                 alt="Data Drip"
                 width={300}
@@ -45,7 +46,8 @@ export default function Masterpieces() {
           </div>
           <div className={`flex flex-row mb-6`}>
             <div className={`relative w-2/5 mr-8 my-2`}>
-              <Image 
+              <Image
+                style={{ visibility: isModalOpen ? 'hidden' : 'visible' }}
                 src="/segway-pid.png"
                 alt="Segway PID"
                 width={300}
@@ -73,6 +75,7 @@ export default function Masterpieces() {
           <div className={`flex flex-row mb-6`}>
             <div className={`relative w-2/5 mr-8 my-2`}>
               <Image
+                style={{ visibility: isModalOpen ? 'hidden' : 'visible' }}
                 src="/tacticsninja.png"
                 alt="Tactics Ninja"
                 width={300}

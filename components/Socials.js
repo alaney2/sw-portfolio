@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaGithubAlt } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaKaggle } from 'react-icons/fa';
@@ -8,30 +8,34 @@ import { cursorToRGBA, useWindowSize } from '@/components/helpers';
 
 
 const Modal = ({ onClose, children }) => {
+  const handleClickOutside = (e) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-20 bg-slate-950 bg-opacity-50">
-      <div className="bg-slate-800 p-6 rounded-xl flex flex-col">
-        <button onClick={onClose} className="float-right">
-          Close
-        </button>
+    <div className="fixed inset-0 flex items-center justify-center z-[99999] bg-slate-950 bg-opacity-50" onClick={handleClickOutside}>
+      <div className="bg-slate-800 p-6 rounded-xl flex flex-col z-[9999]">
         {children}
       </div>
     </div>
   );
 };
 
-export default function Socials() {
+export default function Socials({ isModalOpen, setIsModalOpen }) {
   const { cursor } = useCursor();
   const cursorColor = cursorToRGBA(cursor);
   const [showModal, setShowModal] = useState(false);
 
   const windowSize = useWindowSize();
 
-  const iframeWidth = windowSize.width * 0.8;
-  const iframeHeight = windowSize.height * 0.8;
+  const iframeWidth = Math.min(windowSize.width * 0.8, 720);
+  const iframeHeight = Math.min(windowSize.height * 0.85, 1280);
 
   const toggleModal = () => {
     setShowModal(!showModal);
+    setIsModalOpen(!isModalOpen);
   };
 
   return (

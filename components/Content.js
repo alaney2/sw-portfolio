@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Nav from '@/components/Nav';
 import Socials from '@/components/Socials';
 import TheForceWithin from "@/components/TheForceWithin";
@@ -13,6 +14,7 @@ import Link from 'next/link';
 export default function Content() {
   const { cursor } = useCursor();
   const side = jediOrSith(cursor);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className={`z-10 mx-auto min-h-screen min-w-screen max-w-screen bg-slate-950 bg-cover bg-center py-12 md:py-16 lg:py-24 px-8 md:px-12 lg:px-20`}>
@@ -25,13 +27,13 @@ export default function Content() {
                 <h1 className={`${styles.starJedi} text-4xl sm:text-5xl md:mt-24 tracking-widest text-gray-100`}>Alan Yao</h1>
               </Link>
               <h2 className={`my-5 text-lg text-gray-200`}> Master of Computer Science at UIUC</h2>
-              <desc className={`text-gray-400 text-md font-light`}> Bridging imagination and functionality with efficient code. </desc>
+              <p className={`text-gray-400 text-md font-light`}> Bridging imagination and functionality with efficient code. </p>
               <div className="hidden md:flex">
                 <Nav />
               </div>
             </div>
             <div className="mb-24 mt-8">
-              <Socials />
+              <Socials isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
             </div>
           </div>
           <div className={`hidden md:block md:col-start-1 md:col-end-2`}></div>
@@ -46,7 +48,7 @@ export default function Content() {
             </div>
             <div className='mb-36 scroll-mt-24' id="projects">
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}</h1>
-              <Masterpieces />
+              <Masterpieces isModalOpen={isModalOpen} />
             </div>
             <div className='mb-36 md:mb-0 flex justify-center scroll-mt-24' id="contact">
               <div className="flex flex-col justify-center items-center h-full">
