@@ -2,7 +2,7 @@ import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-export default function Hologram() {
+export default function Hologram({ mobile=false }) {
   const { inView, ref } = useInView({ threshold: 1 });
   const [init, setInit] = useState(false);
 

@@ -19,7 +19,7 @@ export default function Content() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className={`z-10 mx-auto min-h-screen min-w-screen max-w-screen bg-slate-950 bg-cover bg-center py-12 md:py-16 lg:py-24 px-8 md:px-12 lg:px-20`}>
+    <div className={`z-10 mx-auto min-h-screen min-w-screen max-w-screen bg-slate-950 bg-cover bg-center py-12 md:py-16 lg:py-24 px-8 md:px-12 lg:px-20 overflow-x-hidden`}>
       <Stars count={100} />
       <div style={{ position: 'relative', zIndex: 1 }}>
         <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2">
@@ -34,7 +34,10 @@ export default function Content() {
                 <Nav />
               </div>
             </div>
-            <div className="hidden md:flex grow relative w-64 pt-16">
+            {/* <div className="hidden md:flex grow relative w-64 pt-16">
+              <Hologram />
+            </div> */}
+            <div className="flex grow relative w-48 md:w-64 md:pt-16">
               <Hologram />
             </div>
             <div className="mb-24 md:mb-20 mt-8 py-8">

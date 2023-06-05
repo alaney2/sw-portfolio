@@ -49,6 +49,19 @@ a {
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .profile-pic {
+    position: absolute;
+    /* bottom: 0; */
+    top: 30px;
+    right: -250px;
+    transition: all 0.2s;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
 .profile-pic.animate {
   animation: profile 0.8s linear forwards;
 }
@@ -59,6 +72,12 @@ a {
 
 .profile-pic.hide {
   transform: rotateZ(10deg) translateX(20vh);
+}
+
+@media (max-width: 768px) {
+  .profile-pic.hide {
+    transform: rotateZ(10deg) translateX(5vh);
+  }
 }
 
 .profile-pic.hidden {
@@ -74,6 +93,21 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  @keyframes profile {
+    0% {
+      /* top: 100vh; */
+      right: -250px;
+      opacity: 0;
+    }
+    100% {
+      /* top: 30px; */
+      right: -250px;
+      opacity: 0.8;
+    }
+  }
+}
+
 .loading-profile-pic {
   position: relative;
   bottom: -500px;
@@ -83,8 +117,25 @@ a {
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .loading-profile-pic {
+    position: absolute;
+    bottom: -500px;
+    right: -250px;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
 .loading-profile-pic.show {
   animation: loading 0.8s linear forwards;
+}
+
+@media (max-width: 768px) {
+  .loading-profile-pic.show {
+    animation: loading 0.0s linear forwards;
+  }
 }
 
 .loading-profile-pic.hidden {
