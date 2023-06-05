@@ -8,6 +8,7 @@ import { useCursor } from '@/components/CursorProvider';
 export default function Home() {
   const { cursor, setCursor, isCursorSelected, setIsCursorSelected } = useCursor();
   const [isInitialized, setIsInitialized] = useState(false);
+  const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
     const storedCursor = localStorage.getItem('cursor');
@@ -21,9 +22,17 @@ export default function Home() {
     setIsInitialized(true);
   }, [setCursor, setIsCursorSelected]);
 
+  useEffect(() => {
+    if (isCursorSelected) {
+      setTimeout(() => {
+        setShowContent(true);
+      }, 100);
+    }
+  }, [isCursorSelected]);
+
   return (
     <div
-      className={`text-gray-300 bg-slate-900`}
+      className={`text-gray-300 bg-slate-900 min-h-screen w-screen bg-cover`}
       style={{ cursor: `url(${cursor}), auto` }}
     >
       <Head>
@@ -37,8 +46,14 @@ export default function Home() {
           {!isCursorSelected && (
             <CursorSelection />
           )}
-          {isCursorSelected && (
-            <Content />
+          {showContent ? (
+            <div className={`transition-opacity duration-1000 opacity-100`}>
+              <Content />
+            </div>
+          ) : (
+            <div className={`transition-opacity duration-1000 opacity-0`}>
+              <Content />
+            </div>
           )}
         </>
       )}

@@ -21,7 +21,7 @@ export default function CursorSelection() {
     >
       <div className="flex flex-row mb-4">
         <button 
-          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-green-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-green-500`}
+          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center focus:bg-green-saber focus:bg-opacity-20 focus:border-green-500 hover:bg-green-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-green-500`}
           onClick={() => handleCursorSelection('/green-saber.cur')}
         >
           <div className="transform rotate-[-7deg]">
@@ -36,7 +36,7 @@ export default function CursorSelection() {
         </button>
 
         <button 
-          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-blue-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-blue-500`}
+          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center focus:bg-blue-saber focus:bg-opacity-20 focus:border-blue-500 hover:bg-blue-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-blue-500`}
           onClick={() => handleCursorSelection('/blue-saber.cur')}
         >
           <div className="transform rotate-[-7deg]">
@@ -51,7 +51,7 @@ export default function CursorSelection() {
         </button>
 
         <button 
-          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-red-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-red-500`}
+          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center focus:bg-red-saber focus:bg-opacity-20 focus:border-red-500 hover:bg-red-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-red-500`}
           onClick={() => handleCursorSelection('/red-saber.cur')}
         >
           <div className="transform rotate-[-7deg]">
@@ -65,7 +65,7 @@ export default function CursorSelection() {
           </div>
         </button>
         <button 
-          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-purple-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-purple-500`}
+          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center focus:bg-purple-saber focus:bg-opacity-20 focus:border-purple-500 hover:bg-purple-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-purple-500`}
           onClick={() => handleCursorSelection('/purple-saber.cur')}
         >
           <div className="transform rotate-[-7deg]">
@@ -81,7 +81,7 @@ export default function CursorSelection() {
       </div>
       <div style={{ visibility: isCursorClicked ? 'visible' : 'hidden' }}>
         <button
-          className={`text-md mt-8 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 text-gray-100 px-4 py-2 rounded-xl outline-none transition-all delay-50 duration-1000 ${isCursorClicked ? 'opacity-100' : 'opacity-0'}`}
+          className={`text-md mt-16 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 text-gray-100 px-4 py-2 rounded-xl outline-none transition-all delay-50 duration-1000 ${isCursorClicked ? 'opacity-100' : 'opacity-0'}`}
           onClick={() => {
             setIsCursorSelected(true);
             localStorage.setItem('cursor', cursor);

@@ -42,8 +42,6 @@ a {
 .profile-pic {
   position: absolute;
   bottom: 0;
-  /* right: 50px;*/
-  /* left: 20px; */
   transition: all 0.2s;
   opacity: 0;
   width: 100%;
@@ -53,7 +51,6 @@ a {
 @media (max-width: 768px) {
   .profile-pic {
     position: absolute;
-    /* bottom: 0; */
     top: 30px;
     right: -175px;
     transition: all 0.2s;
@@ -97,12 +94,10 @@ a {
 @media (max-width: 768px) {
   @keyframes profile {
     0% {
-      /* top: 100vh; */
       right: -175px;
       opacity: 0;
     }
     100% {
-      /* top: 30px; */
       right: -175px;
       opacity: 0.8;
     }
@@ -112,7 +107,6 @@ a {
 .loading-profile-pic {
   position: relative;
   bottom: -500px;
-  /* left: 20px; */
   opacity: 0;
   width: 100%;
   height: auto;

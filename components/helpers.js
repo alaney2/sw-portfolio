@@ -40,11 +40,32 @@ export const borderColors = {
   '/purple-saber.cur': 'hover:border-purple-saber',
 }
 
+export const borderColorsDefault = {
+  '/blue-saber.cur': 'border-blue-saber',
+  '/red-saber.cur': 'border-red-saber',
+  '/green-saber.cur': 'border-green-saber',
+  '/purple-saber.cur': 'border-purple-saber',
+}
+
+export const bgColors = {
+  '/blue-saber.cur': 'bg-blue-saber',
+  '/red-saber.cur': 'bg-red-saber',
+  '/green-saber.cur': 'bg-green-saber',
+  '/purple-saber.cur': 'bg-purple-saber',
+}
+
 export const textColors = {
   '/blue-saber.cur': 'hover:text-blue-saber',
   '/red-saber.cur': 'hover:text-red-saber',
   '/green-saber.cur': 'hover:text-green-saber',
   '/purple-saber.cur': 'hover:text-purple-saber',
+}
+
+export const textColorsDefault = {
+  '/blue-saber.cur': 'text-blue-saber',
+  '/red-saber.cur': 'text-red-saber',
+  '/green-saber.cur': 'text-green-saber',
+  '/purple-saber.cur': 'text-purple-saber',
 }
 
 export const useWindowSize = () => {
