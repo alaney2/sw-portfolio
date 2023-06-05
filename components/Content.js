@@ -5,7 +5,7 @@ import TheForceWithin from "@/components/TheForceWithin";
 import GalacticAdventures from "@/components/GalacticAdventures";
 import Masterpieces from "@/components/Masterpieces";
 import Contact from "@/components/Contact";
-import styles from '@/styles/CursorSelection.module.css';
+import styles from '@/styles/Font.module.css';
 import { jediOrSith } from "@/components/helpers";
 import { useCursor } from "@/components/CursorProvider";
 import Stars from '@/components/Stars';

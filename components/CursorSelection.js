@@ -21,7 +21,7 @@ export default function CursorSelection() {
     >
       <div className="flex flex-row mb-4">
         <button 
-          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-green-saber hover:bg-opacity-30 transition-colors duration-300 hover:border-green-500`}
+          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-green-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-green-500`}
           onClick={() => handleCursorSelection('/green-saber.cur')}
         >
           <div className="transform rotate-[-7deg]">
@@ -36,7 +36,7 @@ export default function CursorSelection() {
         </button>
 
         <button 
-          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-blue-saber hover:bg-opacity-30 transition-colors duration-300 hover:border-blue-500`}
+          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-blue-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-blue-500`}
           onClick={() => handleCursorSelection('/blue-saber.cur')}
         >
           <div className="transform rotate-[-7deg]">
@@ -51,7 +51,7 @@ export default function CursorSelection() {
         </button>
 
         <button 
-          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-red-saber hover:bg-opacity-30 transition-colors duration-300 hover:border-red-500`}
+          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-red-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-red-500`}
           onClick={() => handleCursorSelection('/red-saber.cur')}
         >
           <div className="transform rotate-[-7deg]">
@@ -65,7 +65,7 @@ export default function CursorSelection() {
           </div>
         </button>
         <button 
-          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-purple-saber hover:bg-opacity-30 transition-colors duration-300 hover:border-purple-500`}
+          className={`w-[64px] h-[64px] border-2 m-2 rounded-md flex items-center justify-center hover:bg-purple-saber hover:bg-opacity-20 transition-colors duration-300 hover:border-purple-500`}
           onClick={() => handleCursorSelection('/purple-saber.cur')}
         >
           <div className="transform rotate-[-7deg]">
