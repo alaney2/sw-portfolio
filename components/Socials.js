@@ -4,7 +4,6 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { FaKaggle } from 'react-icons/fa';
 import { RiFilePaper2Line } from 'react-icons/ri';
 import { useWindowSize } from '@/components/helpers';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 
 const Modal = ({ onClose, children }) => {
@@ -16,8 +15,8 @@ const Modal = ({ onClose, children }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-[99999] bg-slate-950 bg-opacity-50" onClick={handleClickOutside}>
-      <div className="relative bg-slate-800 px-8 md:px-10 py-8 md:py-10 rounded-xl flex flex-col z-[9999]">
-        <button className="absolute left-4 top-4 mb-1 w-4 h-4 bg-red-500 hover:bg-red-600 rounded-full" onClick={onClose} />
+      <div className="relative bg-slate-800 px-6 md:px-10 py-6 md:py-10 rounded-xl flex flex-col z-[9999]">
+        <button className="absolute left-2 top-2 md:left-4 md:top-4 mb-1 w-3 h-3 md:w-4 md:h-4 bg-red-500 hover:bg-red-600 rounded-full" onClick={onClose} />
         <div>
           {children}
         </div>
@@ -30,7 +29,6 @@ export default function Socials({ isModalOpen, setIsModalOpen }) {
   const [showModal, setShowModal] = useState(false);
 
   const windowSize = useWindowSize();
-
   const iframeWidth = Math.min(windowSize.width * 0.8, 1012);
   const iframeHeight = Math.min(windowSize.height * 0.8, iframeWidth * 717 / 506, 1434);
 
