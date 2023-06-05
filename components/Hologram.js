@@ -15,6 +15,7 @@ export default function Hologram({ mobile=false }) {
   return (
     <div ref={ref}>
       <Image
+        draggable={false}
         style={{ zIndex: -1 }}
         src="/holo.png"
         alt="Hologram"
@@ -24,6 +25,7 @@ export default function Hologram({ mobile=false }) {
       />
 
       <Image
+        draggable={false}
         style={{ zIndex: -1 }}
         src="/holo.png"
         alt="Hologram"

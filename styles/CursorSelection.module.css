@@ -28,35 +28,3 @@
 .deathStar {
   font-family: 'DeathStar', sans-serif;
 }
-
-.red {
-  background-color: #FF0000;
-}
-
-.red:hover {
-  border-color: #FF0000;
-}
-
-.blue {
-  background-color: #0077FF;
-}
-
-.blue:hover {
-  border-color: #0077FF;
-}
-
-.green {
-  background-color: #01EB14;
-}
-
-.green:hover {
-  border-color: #01EB14;
-}
-
-.purple {
-  background-color: #D000FF;
-}
-
-.purple:hover {
-  border-color: #D000FF;
-}

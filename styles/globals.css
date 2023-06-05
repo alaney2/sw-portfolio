@@ -64,7 +64,7 @@ a {
 }
 
 .profile-pic.animate {
-  animation: profile 0.8s linear forwards;
+  animation: profile 1s linear forwards;
 }
 
 .profile-pic.show {
@@ -130,7 +130,7 @@ a {
 }
 
 .loading-profile-pic.show {
-  animation: loading 0.8s linear forwards;
+  animation: loading 1s linear forwards;
 }
 
 @media (max-width: 768px) {

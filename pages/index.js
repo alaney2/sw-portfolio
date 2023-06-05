@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div
-      className={`text-gray-300 `}
+      className={`text-gray-300 bg-slate-900`}
       style={{ cursor: `url(${cursor}), auto` }}
     >
       <Head>
