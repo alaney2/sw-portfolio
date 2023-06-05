@@ -10,7 +10,7 @@ export default function TheForceWithin({ mb }) {
     <div className={`mb-${mb} text-md leading-relaxed text-gray-400`}>
       <p className={`mb-5`}>
         Greetings, I am a software engineer based in the Outer Rim Territories of the galaxy.
-        Throughout my academic odyssey, I have had the opportunity to complete three internships at leading tech companies, where I honed my skills in various domains such as droid programming, hyperdrive optimization, and cloud city computing.
+        Throughout my academic journey, I have had the opportunity to complete three internships at leading tech companies, where I honed my skills in various domains such as droid programming, hyperdrive optimization, and cloud city computing.
       </p>
 
       <p>
