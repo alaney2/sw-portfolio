@@ -29,7 +29,7 @@ export default function Socials({ isModalOpen, setIsModalOpen }) {
   const windowSize = useWindowSize();
 
   const iframeWidth = Math.min(windowSize.width * 0.8, 720);
-  const iframeHeight = Math.min(windowSize.height * 0.85, 1280);
+  const iframeHeight = Math.min(windowSize.height * 0.8, 1280);
 
   const toggleModal = () => {
     setShowModal(!showModal);

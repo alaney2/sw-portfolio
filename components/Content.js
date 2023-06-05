@@ -11,7 +11,7 @@ import { useCursor } from "@/components/CursorProvider";
 import Stars from '@/components/Stars';
 import Hologram from '@/components/Hologram';
 import Link from 'next/link';
-import Image from 'next/image';
+
 
 export default function Content() {
   const { cursor } = useCursor();
@@ -37,7 +37,7 @@ export default function Content() {
             {/* <div className="hidden md:flex grow relative w-64 pt-16">
               <Hologram />
             </div> */}
-            <div className="flex grow relative w-48 md:w-64 md:pt-16">
+            <div className="flex grow relative w-24 md:w-36 md:pt-16">
               <Hologram />
             </div>
             <div className="mb-24 md:mb-20 mt-8 py-8">
@@ -50,13 +50,16 @@ export default function Content() {
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>The Force Within</h1>
               <TheForceWithin />
             </div>
-            <div className='mb-24 md:mb-36 scroll-mt-24' id="experience">
+            <div className='mb-24 md:mb-24 scroll-mt-24' id="experience">
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>Galactic Adventures</h1>
               <GalacticAdventures />
             </div>
-            <div className='mb-24 md:mb-36 scroll-mt-24' id="projects">
+            <div className='mb-12 md:mb-18 scroll-mt-24' id="projects">
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}</h1>
               <Masterpieces isModalOpen={isModalOpen} />
+            </div>
+            <div className="flex mb-12 md:mb-16 xl:px-8 md:py-4">
+              <p className="text-[10px] text-gray-500 w-full">I liked <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this site&apos;s</a> neat layout</p>
             </div>
             <div className='mb-24 md:mb-0 flex justify-center scroll-mt-24' id="contact">
               <div className="flex flex-col justify-center items-center h-full">
@@ -64,10 +67,10 @@ export default function Content() {
                 <Contact />
               </div>
             </div>
+            
           </div>
         </div>
       </div>
-
     </div>
   );
 };
