@@ -37,7 +37,7 @@ export default function Content() {
             <div className="hidden md:flex grow relative w-64 pt-16">
               <Hologram />
             </div>
-            <div className="mb-24 mt-8">
+            <div className="mb-24 md:mb-20 mt-8 py-8">
               <Socials isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
             </div>
           </div>
@@ -47,15 +47,15 @@ export default function Content() {
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>The Force Within</h1>
               <TheForceWithin />
             </div>
-            <div className='mb-36 scroll-mt-24' id="experience">
+            <div className='mb-24 md:mb-36 scroll-mt-24' id="experience">
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>Galactic Adventures</h1>
               <GalacticAdventures />
             </div>
-            <div className='mb-36 scroll-mt-24' id="projects">
+            <div className='mb-24 md:mb-36 scroll-mt-24' id="projects">
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}</h1>
               <Masterpieces isModalOpen={isModalOpen} />
             </div>
-            <div className='mb-36 md:mb-0 flex justify-center scroll-mt-24' id="contact">
+            <div className='mb-24 md:mb-0 flex justify-center scroll-mt-24' id="contact">
               <div className="flex flex-col justify-center items-center h-full">
                 <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}</h1>
                 <Contact />
