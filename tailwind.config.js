@@ -13,6 +13,9 @@ module.exports = {
         'green-saber': '#01EB14',
         'purple-saber': '#D000FF',
       },
+      screens: {
+        'tall': {'raw': '(min-height: 1000px)'},
+      }
     },
   },
   plugins: [],

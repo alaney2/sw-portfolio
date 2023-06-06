@@ -62,13 +62,12 @@ export default function Content() {
               <p className={`text-gray-400 text-md font-light`}> Bridging imagination and functionality with efficient code. </p>
               <div className="hidden md:flex">
                 <Nav activeSection={activeSection} />
-
               </div>
             </div>
             <div className="flex grow relative w-24 md:w-36 md:pt-16">
               <Hologram />
             </div>
-            <div className="mb-24 md:mb-20 mt-8 py-8">
+            <div className="mb-24 md:mb-20 mt-2 tall:mt-8 py-8">
               <Socials isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
             </div>
           </div>
@@ -95,7 +94,6 @@ export default function Content() {
                 <Contact />
               </div>
             </div>
-            
           </div>
         </div>
       </div>
