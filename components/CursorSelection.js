@@ -16,7 +16,7 @@ export default function CursorSelection() {
   
   return (
     <div
-      className={`text-3xl text-gray-100 flex flex-col h-screen w-screen bg-slate-900 justify-center items-center`}
+      className={`text-3xl text-gray-100 flex flex-col min-h-screen max-h-screen w-screen bg-slate-900 justify-center items-center`}
       style={{ cursor: `url(${cursor}), auto` }}
     >
       <div className="flex flex-row mb-4">
