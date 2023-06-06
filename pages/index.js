@@ -55,22 +55,24 @@ export default function Home() {
         <meta name="theme-color" content="#111827" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {isInitialized && (
-        <>
-          {!isCursorSelected && (
-            <CursorSelection />
-          )}
-          {showContent ? (
-            <div className={`transition-opacity duration-1000 opacity-100`}>
-              <Content />
-            </div>
-          ) : (
-            <div className={`transition-opacity duration-1000 opacity-0`}>
-              <Content />
-            </div>
-          )}
-        </>
-      )}
+      <body>
+        {isInitialized && (
+          <>
+            {!isCursorSelected && (
+              <CursorSelection />
+            )}
+            {showContent ? (
+              <div className={`transition-opacity duration-1000 opacity-100`}>
+                <Content />
+              </div>
+            ) : (
+              <div className={`transition-opacity duration-1000 opacity-0`}>
+                <Content />
+              </div>
+            )}
+          </>
+        )}
+      </body>
     </div>
   );
 };
