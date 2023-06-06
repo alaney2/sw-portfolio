@@ -27,7 +27,7 @@ export default function Content() {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.6,
+      threshold: 0.9,
     };
   
     const observer = new IntersectionObserver((entries, observer) => {
@@ -77,17 +77,18 @@ export default function Content() {
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>The Force Within</h1>
               <TheForceWithin />
             </div>
-            <div ref={experienceRef} className='mb-24 md:mb-24 scroll-mt-24' id="experience">
+            <div ref={experienceRef} className='mb-12 md:mb-12 scroll-mt-24' id="experience">
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>Galactic Adventures</h1>
               <GalacticAdventures />
             </div>
-            <div ref={projectsRef} className='mb-12 md:mb-18 scroll-mt-24' id="projects">
+            <div className="flex mb-12 md:mb-12 xl:px-8 md:py-4">
+              <p className="text-[9px] lg:text-[10px] text-gray-500 w-full">I liked <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this site&apos;s</a> neat layout</p>
+            </div>
+            <div ref={projectsRef} className='mb-24 md:mb-32 scroll-mt-24' id="projects">
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}</h1>
               <Masterpieces isModalOpen={isModalOpen} />
             </div>
-            <div className="flex mb-12 md:mb-16 xl:px-8 md:py-4">
-              <p className="text-[9px] lg:text-[10px] text-gray-500 w-full">I liked <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this site&apos;s</a> neat layout</p>
-            </div>
+            
             <div ref={contactRef} className='mb-24 md:mb-0 flex justify-center scroll-mt-24' id="contact">
               <div className="flex flex-col justify-center items-center h-full">
                 <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}</h1>
