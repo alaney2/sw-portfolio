@@ -83,6 +83,9 @@ a {
 }
 
 @keyframes profile {
+  /* 0% {
+    opacity: 0;
+  } */
   99% {
     opacity: 0;
   }
@@ -124,7 +127,7 @@ a {
 }
 
 .loading-profile-pic.show {
-  animation: loading 1s linear forwards;
+  animation: loading 0.8s linear forwards;
 }
 
 @media (max-width: 768px) {
