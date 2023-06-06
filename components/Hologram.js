@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 export default function Hologram() {
-  const { inView, ref } = useInView({ threshold: 0.1 });
+  const { inView, ref } = useInView({ threshold: 1.0 });
   const [init, setInit] = useState(false);
   const [visible, setVisible] = useState(false);
 

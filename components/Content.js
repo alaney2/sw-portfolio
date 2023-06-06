@@ -64,9 +64,9 @@ export default function Content() {
                 <Nav activeSection={activeSection} />
               </div>
             </div>
-            <div className="flex grow relative w-24 md:w-36 md:pt-16">
+            {/* <div className="flex grow relative w-24 md:w-36 md:pt-16">
               <Hologram />
-            </div>
+            </div> */}
             <div className="mb-24 md:mb-20 mt-2 tall:mt-8 py-8">
               <Socials isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
             </div>
