@@ -30,6 +30,19 @@ export default function Home() {
     }
   }, [isCursorSelected]);
 
+  useEffect(() => {
+    const preventHorizontalScroll = (event) => {
+      if (event.scale !== 1) {
+        event.preventDefault();
+      }
+    };
+
+    document.addEventListener('touchmove', preventHorizontalScroll, { passive: false });
+    return () => {
+      document.removeEventListener('touchmove', preventHorizontalScroll);
+    };
+  }, []);
+
   return (
     <div
       className={`text-gray-300 bg-slate-900 min-h-screen w-screen bg-cover`}
