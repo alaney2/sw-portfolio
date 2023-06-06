@@ -8,15 +8,23 @@ import { FaCode } from 'react-icons/fa';
 export default function Masterpieces({ isModalOpen }) {
   const { cursor } = useCursor();
 
+  const handleButtonClick = (url) => {
+    window.open(url, "_blank", "noopener noreferrer");
+  };
+
   return (
     <div className={`flex flex-col text-gray-400`}>
       <a href="https://www.datadrip.cafe" target="_blank" rel="noopener" className='md:mt-10'>
         <div className={`flex flex-col rounded-xl xl:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
-          <div className='flex'>
-            <h1 className={`text-gray-300 mb-4 mr-6`}>Data Drip</h1>
-            <a href="https://github.com/alaney2/datadrip" title="Code" target="_blank" rel="noopener noreferrer" className="text-2xl icon">
+          <div className='flex mb-4 mr-6'>
+            <h1 className={`text-gray-300`}>Data Drip</h1>
+            <button 
+              onClick={() => handleButtonClick("https://github.com/alaney2/datadrip")}
+              title="Code"
+              className="text-xl icon ml-6"
+            >
               <FaCode />
-            </a>
+            </button>
           </div>
           <div className={`flex flex-row mb-6`}>
             <div className={`relative w-2/5 mr-8 my-2`}>
@@ -38,11 +46,15 @@ export default function Masterpieces({ isModalOpen }) {
 
       <a href="https://segway-pid.vercel.app" target="_blank" rel="noopener" className='md:mt-10'>
         <div className={`flex flex-col rounded-xl xl:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
-          <div className='flex'>
-            <h1 className={`text-gray-300 mb-4 mr-6`}>Segway PID</h1>
-            <a href="https://github.com/alaney2/segway-pid" title="Code" target="_blank" rel="noopener noreferrer" className="text-2xl icon">
+          <div className='flex mb-4 mr-6'>
+            <h1 className={`text-gray-300`}>Segway PID</h1>
+            <button
+              onClick={() => handleButtonClick("https://github.com/alaney2/segway-pid")} 
+              title="Code"
+              className="text-xl icon ml-6"
+            >
               <FaCode />
-            </a>
+            </button>
           </div>
           <div className={`flex flex-row mb-6`}>
             <div className={`relative w-2/5 mr-8 my-2`}>
@@ -66,11 +78,15 @@ export default function Masterpieces({ isModalOpen }) {
 
       <a href="https://tactics-ninja.vercel.app" target="_blank" rel="noopener" className='md:mt-10'>
         <div className={`flex flex-col rounded-xl xl:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
-          <div className='flex'>
-            <h1 className={`text-gray-300 mb-4 mr-6`}>Tactics Ninja</h1>
-            <a href="https://github.com/alaney2/tactics-ninja" title="Code" target="_blank" rel="noopener noreferrer" className="text-2xl icon">
+          <div className='flex mb-4 mr-6'>
+            <h1 className={`text-gray-300`}>Tactics Ninja</h1>
+            <button 
+              onClick={() => handleButtonClick("https://github.com/alaney2/tactics-ninja")} 
+              title="Code"
+              className="text-xl icon ml-6"
+            >
               <FaCode />
-            </a>
+            </button>
           </div>
           <div className={`flex flex-row mb-6`}>
             <div className={`relative w-2/5 mr-8 my-2`}>
