@@ -19,7 +19,7 @@ export default function GalacticAdventures() {
               Mobile Builders team
             </p>
             <div className="w-full">
-              <Skills skills={['Seismic', 'JavaScript', 'Git']} />
+              <Skills skills={['Seismic', 'Tectonic', 'JavaScript', 'Git']} />
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function GalacticAdventures() {
               Placed 5th in intern hackathon by using the Mobile App Builder to create Fluid, a task management app for stories and defects.
             </p>
             <div className="w-full">
-              <Skills skills={['Seismic', 'JavaScript', 'Git']} />
+              <Skills skills={['Seismic', 'Tectonic', 'JavaScript', 'Git']} />
             </div>
           </div>
         </div>
