@@ -10,7 +10,7 @@ export default function Hologram() {
   useEffect(() => {
     setTimeout(() => {
       setInit(true)
-    }, 100)
+    }, 1);
   }, []);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Hologram() {
         <Image
           draggable={false}
           style={{ zIndex: -1 }}
-          src="/holo.png"
+          src="/holog.png"
           alt="Hologram"
           width={200}
           height={200}
@@ -38,7 +38,7 @@ export default function Hologram() {
         <Image
           draggable={false}
           style={{ zIndex: -1 }}
-          src="/holo.png"
+          src="/holog.png"
           alt="Hologram"
           width={200}
           height={200}
