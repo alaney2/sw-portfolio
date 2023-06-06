@@ -1,3 +1,5 @@
+import React from "react";
+
 
 const Stars = ({ count }) => {
   const stars = [];
@@ -27,4 +29,4 @@ const Stars = ({ count }) => {
   return <div style={{ position: 'relative', width: '100%', height: '100%' }}>{stars}</div>;
 };
 
-export default Stars;
+export default React.memo(Stars);
