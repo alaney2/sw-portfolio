@@ -49,7 +49,7 @@ export default function Content() {
   }, []);
 
   return (
-    <div className={`z-10 mx-auto min-h-screen min-w-screen max-w-screen py-12 md:py-16 lg:py-24 px-6 md:px-12 lg:px-20 overflow-x-hidden`}>
+    <div className={`z-10 mx-auto min-h-screen min-w-screen max-w-screen bg-slate-900 bg-cover py-12 md:py-16 lg:py-24 px-6 md:px-12 lg:px-20 overflow-x-hidden`}>
       <Stars count={100} />
       <div style={{ position: 'relative', zIndex: 1 }}>
         <div className="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2">
