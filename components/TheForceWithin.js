@@ -9,14 +9,13 @@ export default function TheForceWithin({ mb }) {
   return (
     <div className={`mb-${mb} text-md leading-relaxed text-gray-400`}>
       <p className={`mb-5`}>
-        Hi, I am a student based in the Outer Rim Territories of the galaxy.
-        Throughout my academic journey, I&apos;ve had the opportunity to complete three internships at leading tech companies, where I honed my skills in various domains such as droid programming, hyperdrive optimization, and cloud city computing.
+        Merging technology and the Force, at the core of my interests it has always been.
+        Throughout my academic journey, completed three internships at leading tech companies, I have. Skills in droid programming, hyperdrive optimization, and cloud city computing, honed they were.
       </p>
-
       <p>
-        When I&apos;m not busy coding or practicing my lightsaber techniques, I enjoy exploring my creative side through hobbies like HoloNet photography and cantina music production.
-        As an aspiring {side === 'Sith' ? 'Sith Lord' : 'Jedi Knight'}, I am driven by the desire to create meaningful and impactful solutions that improve lives across the galaxy.
-        Don&apos;t hesitate to reach out if you&apos;d like to connect or discuss potential collaborations in our quest to restore balance to the Force.
+        When not busy coding or practicing lightsaber techniques, explore my creative side through HoloNet photography and cantina music production, I do.
+        As an aspiring {side === 'Sith' ? 'Sith Lord' : 'Jedi Knight'}, driven by the desire to create meaningful and impactful solutions, improving lives across the galaxy, I am.
+        Hesitate not to reach out, if connect or discuss potential collaborations in our quest to restore balance to the Force, you would like.
       </p>
     </div>
   );
