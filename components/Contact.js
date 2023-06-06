@@ -1,5 +1,5 @@
 import { useCursor } from "@/components/CursorProvider";
-import { borderColors, textColors } from '@/components/helpers';
+import { borderColorsAlways, textColors } from '@/components/helpers';
 
 
 export default function Contact() {
@@ -7,7 +7,7 @@ export default function Contact() {
 
   return (
     <div className={`text-2xl`}>
-      <div className={`py-4 px-10 border-2 md:border-transparent rounded-xl ${borderColors[cursor]} hover:border-opacity-50 ${textColors[cursor]} transition duration-500`}>
+      <div className={`py-4 px-10 border-2 md:border-transparent rounded-xl ${borderColorsAlways[cursor]} hover:border-opacity-50 ${textColors[cursor]} transition duration-500`}>
         <a href="mailto:alanyao.training@gmail.com">Transmit Hologram</a>
       </div>
     </div>

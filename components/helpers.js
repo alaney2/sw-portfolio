@@ -34,6 +34,13 @@ export function jediOrSith(cursorFile) {
 }
 
 export const borderColors = {
+  '/blue-saber.cur': 'md:hover:border-blue-saber',
+  '/red-saber.cur': 'md:hover:border-red-saber',
+  '/green-saber.cur': 'md:hover:border-green-saber',
+  '/purple-saber.cur': 'md:hover:border-purple-saber',
+}
+
+export const borderColorsAlways = {
   '/blue-saber.cur': 'hover:border-blue-saber',
   '/red-saber.cur': 'hover:border-red-saber',
   '/green-saber.cur': 'hover:border-green-saber',
