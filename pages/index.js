@@ -55,7 +55,7 @@ export default function Home() {
         <meta name="theme-color" content="#111827" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body>
+      {/* <body> */}
         {isInitialized && (
           <>
             {!isCursorSelected && (
@@ -72,7 +72,7 @@ export default function Home() {
             )}
           </>
         )}
-      </body>
+      {/* </body> */}
     </div>
   );
 };
