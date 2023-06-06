@@ -86,7 +86,7 @@ export default function Content() {
               <Masterpieces isModalOpen={isModalOpen} />
             </div>
             <div className="flex mb-12 md:mb-16 xl:px-8 md:py-4">
-              <p className="text-[10px] text-gray-500 w-full">I liked <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this site&apos;s</a> neat layout</p>
+              <p className="text-[9px] lg:text-[10px] text-gray-500 w-full">I liked <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this site&apos;s</a> neat layout</p>
             </div>
             <div ref={contactRef} className='mb-24 md:mb-0 flex justify-center scroll-mt-24' id="contact">
               <div className="flex flex-col justify-center items-center h-full">
