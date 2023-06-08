@@ -50,7 +50,7 @@ export default function Home() {
     >
       <Head>
         <title>Alan Yao</title>
-        <meta name="description" content="star wars portfolio" />
+        <meta name="description" content="Merging technology and the Force, at the core of my interests it has always been." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#111827" />
         <link rel="icon" href="/favicon.ico" />
