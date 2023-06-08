@@ -88,11 +88,8 @@ export const useWindowSize = () => {
         height: window.innerHeight,
       });
     };
-
-    // window.addEventListener('resize', handleResize);
+    
     handleResize();
-
-    // return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return windowSize;

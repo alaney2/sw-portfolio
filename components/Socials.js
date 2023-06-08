@@ -1,29 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { FaGithubAlt } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaKaggle } from 'react-icons/fa';
 import { RiFilePaper2Line } from 'react-icons/ri';
 import { useWindowSize } from '@/components/helpers';
+import Modal from '@/components/Modal';
 
-
-const Modal = ({ onClose, children }) => {
-  const handleClickOutside = (e) => {
-    if (e.target === e.currentTarget) {
-      onClose();
-    }
-  };
-
-  return (
-    <div className="fixed inset-0 flex items-center justify-center z-[99999] bg-slate-950 bg-opacity-50" onClick={handleClickOutside}>
-      <div className="relative bg-slate-800 px-6 md:px-10 py-6 md:py-10 rounded-xl flex flex-col z-[9999]">
-        <button className="absolute left-2 top-2 md:left-4 md:top-4 mb-1 w-3 h-3 md:w-4 md:h-4 bg-red-500 hover:bg-red-600 rounded-full" onClick={onClose} />
-        <div>
-          {children}
-        </div>
-      </div>
-    </div>
-  );
-};
 
 export default function Socials({ isModalOpen, setIsModalOpen }) {
   const [showModal, setShowModal] = useState(false);
