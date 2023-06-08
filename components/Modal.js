@@ -7,19 +7,21 @@ export default function Modal({ onClose, children }) {
     }
   };
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'Escape') {
-      onClose();
-    }
-  };
+  
 
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+
     document.addEventListener('keydown', handleKeyDown);
 
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [onClose]);
 
   return (
     <div onClick={handleClickOutside} className="fixed inset-0 flex items-center justify-center z-[99999] bg-slate-950 bg-opacity-50">
