@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 
+
 export default function Modal({ onClose, children }) {
   const handleClickOutside = (e) => {
     if (e.target === e.currentTarget) {
@@ -7,15 +8,12 @@ export default function Modal({ onClose, children }) {
     }
   };
 
-  
-
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
         onClose();
       }
     };
-
     document.addEventListener('keydown', handleKeyDown);
 
     return () => {
