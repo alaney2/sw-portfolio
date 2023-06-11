@@ -24,7 +24,7 @@ export default function Socials({ isModalOpen, setIsModalOpen }) {
       <a href="https://github.com/alaney2" title="GitHub" target="_blank" rel="noopener noreferrer" className="text-2xl mr-2 my-2 icon">
         <FaGithubAlt />
       </a>
-      <a href="https://www.linkedin.com/in/alan-e-yao/" title="LinkedIn" target="_blank" rel="noopener noreferrer" className="text-2xl m-2 icon">
+      <a href="https://www.linkedin.com/in/alan-e-yao/" title="LinkedIn" target="_blank" rel="" className="text-2xl m-2 icon">
         <FaLinkedinIn />
       </a>
       <a href="https://www.kaggle.com/alaney2" title="Kaggle" target="_blank" rel="noopener noreferrer" className="text-xl m-2 icon">
