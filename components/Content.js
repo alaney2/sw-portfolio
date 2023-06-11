@@ -23,30 +23,32 @@ export default function Content() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
-  const observeSections = () => {
-    const options = {
-      root: null,
-      rootMargin: '96px',
-      threshold: 1.0,
-    };
   
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    }, options);
-  
-    observer.observe(aboutRef.current);
-    observer.observe(experienceRef.current);
-    observer.observe(projectsRef.current);
-    observer.observe(contactRef.current);
-  };
   
   useEffect(() => {
+    const observeSections = () => {
+      const options = {
+        root: null,
+        rootMargin: '96px',
+        threshold: 0.5,
+      };
+    
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && entry.target.id !== activeSection && entry.target.id !== 'contact') {
+              setActiveSection(entry.target.id);
+          }
+        });
+      }, options);
+    
+      observer.observe(aboutRef.current);
+      observer.observe(experienceRef.current);
+      observer.observe(projectsRef.current);
+      observer.observe(contactRef.current);
+    };
+
     observeSections();
-  }, []);
+  }, [activeSection]);
 
   return (
     <div className={`z-10 mx-auto min-h-screen min-w-screen max-w-screen bg-slate-900 bg-cover py-12 md:py-16 lg:py-24 px-6 md:px-12 lg:px-20 overflow-x-hidden`}>
@@ -84,14 +86,14 @@ export default function Content() {
             <div className="flex mb-12 md:mb-12 xl:px-8 md:py-4">
               <p className="text-[9px] lg:text-[10px] text-gray-500 w-full">I liked <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this site&apos;s</a> neat layout</p>
             </div>
-            <div ref={projectsRef} className='mb-24 md:mb-32 scroll-mt-24' id="projects">
+            <div ref={projectsRef} className='mb-24 md:mb-32 scroll-mt-16' id="projects">
               <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}</h1>
               <Masterpieces isModalOpen={isModalOpen} />
             </div>
             
             <div ref={contactRef} className='mb-24 md:mb-0 flex justify-center scroll-mt-24' id="contact">
               <div className="flex flex-col justify-center items-center h-full">
-                <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}</h1>
+                {/* <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}</h1> */}
                 <Contact />
               </div>
             </div>

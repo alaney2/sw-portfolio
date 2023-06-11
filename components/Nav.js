@@ -27,12 +27,12 @@ export default function Nav({ activeSection }) {
       >
         {side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}
       </a>
-      <a 
+      {/* <a 
         href="#contact" 
         className={`${activeSection === 'contact' ? textColorsDefault[cursor] : ''} text-xs tracking-wider uppercase font-semibold ${textColors[cursor]} hover:text-opacity-80 transition duration-200`}
       >
         {side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}
-      </a>
+      </a> */}
     </nav>
   );
 };
