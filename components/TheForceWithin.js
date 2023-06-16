@@ -13,7 +13,7 @@ export default function TheForceWithin({ mb }) {
         Throughout my academic journey, I have completed three internships at leading tech companies and honed my skills in droid programming, hyperdrive optimization, and cloud city computing.
       </p>
       <p>
-        When not busy coding or practicing lightsaber techniques, I explore my creative side through HoloNet photography and cantina music production.
+        When not busy coding or practicing lightsaber techniques, I explore my creative side through HoloNet photography, cantina music production, and CS:GO.
         As an aspiring {side === 'Sith' ? 'Sith Lord' : 'Jedi Knight'}, I am driven by the desire to create meaningful and impactful solutions, improving lives across the galaxy.
         Hesitate not to reach out, if connect or discuss potential collaborations in our quest to restore balance to the Force, you would like.
       </p>
