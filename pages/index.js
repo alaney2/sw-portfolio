@@ -53,7 +53,7 @@ export default function Home() {
         <meta name="description" content="Merging technology and the Force, at the core of my interests it has always been." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#111827" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       {isInitialized && (
         <>
