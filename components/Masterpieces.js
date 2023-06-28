@@ -2,8 +2,8 @@ import Image from 'next/image';
 import Skills from '@/components/Skills';
 import { useCursor } from "@/components/CursorProvider";
 import { borderColors } from '@/components/helpers';
-import { FaCode } from 'react-icons/fa';
-
+import { FaCode, FaPlay } from 'react-icons/fa';
+import { SiDevpost } from 'react-icons/si';
 
 export default function Masterpieces({ isModalOpen }) {
   const { cursor } = useCursor();
@@ -105,6 +105,69 @@ export default function Masterpieces({ isModalOpen }) {
             </div>
           </div>
           <Skills skills={['React', 'Tailwind', 'chessboardjsx', 'chess.js']}/>
+        </div>
+      </a>
+      <a href="https://cal-hacks-frontend.vercel.app/" target="_blank" rel="noopener" className='md:mt-10'>
+        <div className={`flex flex-col rounded-xl xl:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
+          <div className='flex mb-4 mr-6'>
+            <h1 className={`text-gray-300`}>Quirk - AI Hackathon</h1>
+            <button 
+              onClick={() => handleButtonClick("https://devpost.com/software/quirk-mox936")} 
+              title="Code"
+              className="text-lg icon ml-6"
+            >
+              <SiDevpost />
+            </button>
+          </div>
+          <div className={`flex flex-row mb-6`}>
+            <div className={`relative w-2/5 mr-8 my-2`}>
+              <Image
+                style={{ visibility: isModalOpen ? 'hidden' : 'visible' }}
+                src="/quirk.png"
+                alt="Quirk"
+                width={300}
+                height={300}
+              />
+            </div>
+            <div className={`flex flex-col text-md w-3/5`}>
+              <p className="text-sm leading-relaxed">
+                Google and Twitter shove your personality into a box and make you view the Internet through a tiny pinhole. 
+                We don&apos;t. Subscribe to the weird corners of the Internet and don&apos;t be an NPC.
+              </p>
+            </div>
+          </div>
+          <Skills skills={['NextJS', 'Tailwind', 'OpenAI', 'Beautiful Soup']}/>
+        </div>
+      </a>
+      <a href="https://youtu.be/Hj2y1c_NzaQ" target="_blank" rel="noopener" className='md:mt-10'>
+        <div className={`flex flex-col rounded-xl xl:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
+          <div className='flex mb-4 mr-6'>
+            <h1 className={`text-gray-300`}>Fluid - Intern Hackathon</h1>
+            <button 
+              onClick={() => handleButtonClick("https://youtu.be/Hj2y1c_NzaQ")} 
+              title="Play"
+              className="text-md icon ml-6"
+            >
+              <FaPlay />
+            </button>
+          </div>
+          <div className={`flex flex-row mb-6`}>
+            <div className={`relative w-2/5 mr-8 my-2`}>
+              <Image
+                style={{ visibility: isModalOpen ? 'hidden' : 'visible' }}
+                src="/fluid.png"
+                alt="Fluid"
+                width={300}
+                height={300}
+              />
+            </div>
+            <div className={`flex flex-col text-md w-3/5`}>
+              <p className="text-sm leading-relaxed">
+                A mobile app that allows developers to view and manage defects, stories, and pull requests.
+              </p>
+            </div>
+          </div>
+          <Skills skills={['ServiceNow', 'Mobile App Builder', 'JavaScript']}/>
         </div>
       </a>
     </div>
