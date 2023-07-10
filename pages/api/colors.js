@@ -8,5 +8,5 @@ export default async function handler(req, res) {
   }
   await kv.set(color, currentColorCount + 1);
 
-  res.status(200).send({message: 'Color count updated successfully'});
+  res.status(200).send({message: `Color count for ${color} is now ${currentColorCount + 1}`});
 }

@@ -11,7 +11,7 @@ import { useCursor } from "@/components/CursorProvider";
 import Stars from '@/components/Stars';
 import Hologram from '@/components/Hologram';
 import Link from 'next/link';
-
+import ColorChart from '@/components/ColorChart';
 
 export default function Content() {
   const { cursor } = useCursor();
@@ -76,24 +76,28 @@ export default function Content() {
           <div className={`hidden md:block md:col-start-1 md:col-end-2`}></div>
           <div className={`w-full md:w-auto`}>
             <div ref={aboutRef} className='mb-24 xl:px-8 md:py-4 scroll-mt-24' id="about">
-              <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>The Force Within</h1>
+              <h1 className='text-md tracking-wider uppercase font-semibold visible md:hidden mb-8'>The Force Within</h1>
               <TheForceWithin />
             </div>
             <div ref={experienceRef} className='mb-12 md:mb-12 scroll-mt-24' id="experience">
-              <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>Galactic Adventures</h1>
+              <h1 className='text-md tracking-wider uppercase font-semibold visible md:hidden mb-8'>Galactic Adventures</h1>
               <GalacticAdventures />
             </div>
-            <div className="flex mb-12 md:mb-12 xl:px-8 md:py-4">
+            <div className="flex mb-16 md:mb-12 xl:px-8 md:py-4">
               <p className="text-[9px] lg:text-[10px] text-gray-500 w-full">I liked <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this site&apos;s</a> neat layout</p>
             </div>
-            <div ref={projectsRef} className='mb-24 md:mb-32 scroll-mt-16' id="projects">
-              <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}</h1>
+            <div ref={projectsRef} className='mb-20 md:mb-24 scroll-mt-16' id="projects">
+              <h1 className='text-md tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}</h1>
               <Masterpieces isModalOpen={isModalOpen} />
             </div>
-            
+            <div className="mb-20 flex flex-col text-center justify-center align-center items-center">
+              <h1 className='text-sm tracking-wider uppercase font-semibold visible mb-12'>
+                Lightsaber Popularity
+              </h1>
+              <ColorChart />
+            </div>
             <div ref={contactRef} className='mb-24 md:mb-0 flex justify-center scroll-mt-24' id="contact">
               <div className="flex flex-col justify-center items-center h-full">
-                {/* <h1 className='text-sm tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}</h1> */}
                 <Contact />
               </div>
             </div>

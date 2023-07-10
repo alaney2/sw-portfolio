@@ -13,9 +13,6 @@ export default function CursorSelection() {
   async function handleCursorSelection(cursorFile) {
     setCursor(cursorFile);
     setIsCursorClicked(true);
-    const color = cursorFileToColor[cursorFile];
-    const result = await fetch(`/api/colors?color=${color}`);
-    console.log(result);
   }
   
   return (
@@ -86,8 +83,12 @@ export default function CursorSelection() {
       <div style={{ visibility: isCursorClicked ? 'visible' : 'hidden' }}>
         <button
           className={`text-md mt-16 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 text-gray-100 px-4 py-2 rounded-xl outline-none transition-all delay-50 duration-1000 ${isCursorClicked ? 'opacity-100' : 'opacity-0'}`}
-          onClick={() => {
+          onClick={async () => {
             setIsCursorSelected(true);
+            const color = cursorFileToColor[cursor];
+            const result = await fetch(`/api/colors?color=${color}`);
+            const json = await result.json();
+            console.log(json);
             localStorage.setItem('cursor', cursor);
             localStorage.setItem('isCursorSelected', 'true');
           }}
