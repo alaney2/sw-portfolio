@@ -61,7 +61,7 @@ export default function Content() {
                 <h1 className={`${styles.starJedi} text-4xl sm:text-5xl md:mt-24 tracking-widest text-gray-100`}>Alan Yao</h1>
               </Link>
               <h2 className={`my-5 text-lg text-gray-200`}> Master of Computer Science at UIUC</h2>
-              <p className={`text-gray-400 text-md font-light`}> Bridging imagination and functionality with efficient code. </p>
+              <p className={`text-gray-400 text-md font-light`}> Bridging fluidity, flexibility, and functionality with finessive code. </p>
               <div className="hidden md:flex">
                 <Nav activeSection={activeSection} />
               </div>
