@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { useCursor } from '@/components/CursorProvider';
-import { cursorToColor, borderColors } from '@/components/helpers';
+import { cursorToColor, borderColors, cursorFileToColor } from '@/components/helpers';
 import Image from 'next/image';
+import { kv } from '@vercel/kv';
 
 
 export default function CursorSelection() {
@@ -9,9 +10,12 @@ export default function CursorSelection() {
   const [isCursorClicked, setIsCursorClicked] = useState(false);
   const [isButtonHovered, setIsButtonHovered] = useState(false);
 
-  function handleCursorSelection(cursorFile) {
+  async function handleCursorSelection(cursorFile) {
     setCursor(cursorFile);
     setIsCursorClicked(true);
+    const color = cursorFileToColor[cursorFile];
+    const result = await fetch(`/api/colors?color=${color}`);
+    console.log(result);
   }
   
   return (

@@ -40,6 +40,13 @@ export const borderColors = {
   '/purple-saber.cur': 'md:hover:border-purple-saber',
 }
 
+export const cursorFileToColor = {
+  '/blue-saber.cur': 'blue',
+  '/red-saber.cur': 'red',
+  '/green-saber.cur': 'green',
+  '/purple-saber.cur': 'purple',
+}
+
 export const borderColorsAlways = {
   '/blue-saber.cur': 'hover:border-blue-saber',
   '/red-saber.cur': 'hover:border-red-saber',
