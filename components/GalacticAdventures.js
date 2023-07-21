@@ -16,10 +16,10 @@ export default function GalacticAdventures() {
           <div className={`flex flex-col text-md md:w-3/4`}>
             <h1 className={`text-gray-300 mb-3`}>Software Engineer Intern - ServiceNow</h1>
             <p className="text-sm leading-relaxed mb-5">
-              Mobile Builders team
+              Resolved defects and completed stories for the Mobile App Builder. 
             </p>
             <div className="w-full">
-              <Skills skills={['Seismic', 'Tectonic', 'JavaScript', 'Git']} />
+              <Skills skills={['Seismic', 'Tectonic', 'JavaScript', 'Git', 'ServiceNow']} />
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function GalacticAdventures() {
               Placed 5th in intern hackathon by using the Mobile App Builder to create Fluid, a task management app for stories and defects.
             </p>
             <div className="w-full">
-              <Skills skills={['Seismic', 'Tectonic', 'JavaScript', 'Git']} />
+              <Skills skills={['Seismic', 'Tectonic', 'JavaScript', 'Git', 'ServiceNow']} />
             </div>
           </div>
         </div>

@@ -110,7 +110,7 @@ export default function Masterpieces({ isModalOpen }) {
       <a href="https://cal-hacks-frontend.vercel.app/" target="_blank" rel="noopener" className='md:mt-10'>
         <div className={`flex flex-col rounded-xl xl:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
           <div className='flex mb-4 mr-6'>
-            <h1 className={`text-gray-300`}>Quirk - AI Hackathon</h1>
+            <h1 className={`text-gray-300`}>Quirk - CalHacks 2023 AI Hackathon</h1>
             <button 
               onClick={() => handleButtonClick("https://devpost.com/software/quirk-mox936")} 
               title="Code"
@@ -139,10 +139,41 @@ export default function Masterpieces({ isModalOpen }) {
           <Skills skills={['NextJS', 'Tailwind', 'OpenAI', 'Beautiful Soup']}/>
         </div>
       </a>
+      <a href="https://youtu.be/6G-bLp-DYCk" target="_blank" rel="noopener" className='md:mt-10'>
+        <div className={`flex flex-col rounded-xl xl:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
+          <div className='flex mb-4 mr-6'>
+            <h1 className={`text-gray-300`}>Scribe - ServiceNow 2023 UTG Intern Hackathon</h1>
+            <button 
+              onClick={() => handleButtonClick("https://youtu.be/6G-bLp-DYCk")} 
+              title="Play"
+              className="text-md icon ml-6"
+            >
+              <FaPlay />
+            </button>
+          </div>
+          <div className={`flex flex-row mb-6`}>
+            <div className={`relative w-2/5 mr-8 my-2`}>
+              <Image
+                style={{ visibility: isModalOpen ? 'hidden' : 'visible' }}
+                src="/scribe.png"
+                alt="Scribe"
+                width={300}
+                height={300}
+              />
+            </div>
+            <div className={`flex flex-col text-md w-3/5`}>
+              <p className="text-sm leading-relaxed">
+                A code editor for background scripts on the ServiceNow platform with custom syntax highlighting and autocomplete for ServiceNow&apos;s proprietary scripting language.
+              </p>
+            </div>
+          </div>
+          <Skills skills={['1st Place', 'ServiceNow', 'Java', 'JavaScript']}/>
+        </div>
+      </a>
       <a href="https://youtu.be/Hj2y1c_NzaQ" target="_blank" rel="noopener" className='md:mt-10'>
         <div className={`flex flex-col rounded-xl xl:px-8 py-6 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
           <div className='flex mb-4 mr-6'>
-            <h1 className={`text-gray-300`}>Fluid - Intern Hackathon</h1>
+            <h1 className={`text-gray-300`}>Fluid - ServiceNow 2022 UTG Intern Hackathon</h1>
             <button 
               onClick={() => handleButtonClick("https://youtu.be/Hj2y1c_NzaQ")} 
               title="Play"
@@ -167,7 +198,7 @@ export default function Masterpieces({ isModalOpen }) {
               </p>
             </div>
           </div>
-          <Skills skills={['ServiceNow', 'Mobile App Builder', 'JavaScript']}/>
+          <Skills skills={['5th Place', 'ServiceNow', 'Mobile App Builder', 'JavaScript']}/>
         </div>
       </a>
     </div>
