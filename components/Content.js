@@ -23,20 +23,27 @@ export default function Content() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
-  
-  
   useEffect(() => {
     const observeSections = () => {
       const options = {
         root: null,
-        rootMargin: '96px',
-        threshold: 0.5,
+        rootMargin: '0px',
+        threshold: 0.45,
       };
     
       const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-          if (entry.isIntersecting && entry.target.id !== activeSection && entry.target.id !== 'contact') {
-              setActiveSection(entry.target.id);
+          if (entry.isIntersecting) {
+            if (entry.target === aboutRef.current) {
+              setActiveSection('about')  
+            }
+            if (entry.target === experienceRef.current) {
+              setActiveSection('experience')
+            }
+            if (entry.target === projectsRef.current) {
+              setActiveSection('projects')
+            }
+            // etc for other sections
           }
         });
       }, options);
