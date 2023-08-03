@@ -3,6 +3,7 @@ import { FaGithubAlt } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaKaggle } from 'react-icons/fa';
 import { RiFilePaper2Line } from 'react-icons/ri';
+import { SiD, SiDevpost } from 'react-icons/si';
 import { useWindowSize } from '@/components/helpers';
 import Modal from '@/components/Modal';
 
@@ -29,6 +30,9 @@ export default function Socials({ isModalOpen, setIsModalOpen }) {
       </a>
       <a href="https://www.kaggle.com/alaney2" title="Kaggle" target="_blank" rel="noopener noreferrer" className="text-xl m-2 icon">
         <FaKaggle />
+      </a>
+      <a href="https://www.devpost.com/alaney2" title="Devpost" target="_blank" rel="noopener noreferrer" className="text-xl m-2 icon">
+        <SiDevpost />
       </a>
       <a 
         href="/"
