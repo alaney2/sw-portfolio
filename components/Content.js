@@ -43,7 +43,6 @@ export default function Content() {
             if (entry.target === projectsRef.current) {
               setActiveSection('projects')
             }
-            // etc for other sections
           }
         });
       }, options);
@@ -70,7 +69,7 @@ export default function Content() {
               <h2 className={`my-5 text-lg text-gray-200`}> Master of Computer Science at UIUC</h2>
               <p className={`text-gray-400 text-md font-light`}> Bridging fluidity, flexibility, and functionality with finessive code. </p>
               <div className="hidden md:flex">
-                <Nav activeSection={activeSection} />
+                <Nav activeSection={activeSection} setActiveSection={setActiveSection} />
               </div>
             </div>
             <div className="flex grow relative w-24 md:w-36 md:pt-16">
