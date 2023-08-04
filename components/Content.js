@@ -27,8 +27,8 @@ export default function Content() {
     const observeSections = () => {
       const options = {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.5,
+        rootMargin: '96px',
+        threshold: 0.0,
       };
     
       const observer = new IntersectionObserver((entries, observer) => {
