@@ -27,7 +27,7 @@ export default function Content() {
     const observeSections = () => {
       const options = {
         root: null,
-        rootMargin: '72px',
+        rootMargin: '48px',
         threshold: 0.5,
       };
     
