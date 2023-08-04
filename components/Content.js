@@ -24,6 +24,8 @@ export default function Content() {
   const contactRef = useRef(null);
 
   useEffect(() => {
+    let timeoutId = null;
+
     const observeSections = () => {
       const options = {
         root: null,
@@ -34,15 +36,18 @@ export default function Content() {
       const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            if (entry.target === aboutRef.current) {
-              setActiveSection('about')  
-            }
-            if (entry.target === experienceRef.current) {
-              setActiveSection('experience')
-            }
-            if (entry.target === projectsRef.current) {
-              setActiveSection('projects')
-            }
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+              if (entry.target === aboutRef.current) {
+                setActiveSection('about')  
+              }
+              if (entry.target === experienceRef.current) {
+                setActiveSection('experience')
+              }
+              if (entry.target === projectsRef.current) {
+                setActiveSection('projects')
+              }
+            }, 0);
           }
         });
       }, options);
@@ -54,6 +59,7 @@ export default function Content() {
     };
 
     observeSections();
+    return () => clearTimeout(timeoutId);
   }, [activeSection]);
 
   return (
