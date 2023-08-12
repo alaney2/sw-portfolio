@@ -32,7 +32,6 @@ export default function Content() {
         rootMargin: '48px',
         threshold: 0.5,
       };
-      // test
       const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
