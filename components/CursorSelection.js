@@ -96,7 +96,7 @@ export default function CursorSelection() {
           onMouseEnter={() => setIsButtonHovered(true)}
           onMouseLeave={() => setIsButtonHovered(false)}
         >
-          Choose wisely
+          Continue
         </button>
       </div>
       <div className="mb-20"></div>
