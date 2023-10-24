@@ -98,7 +98,7 @@ export default function Content() {
               <p className="text-[9px] lg:text-[10px] text-gray-500 w-full">I liked <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this site&apos;s</a> neat layout</p>
             </div>
             <div ref={projectsRef} className='mb-20 md:mb-24 scroll-mt-16' id="projects">
-              <h1 className='text-md tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Masterpieces' : 'Jedi Masterpieces'}</h1>
+              <h1 className='text-md tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Projects' : 'Jedi Projects'}</h1>
               <Masterpieces isModalOpen={isModalOpen} />
             </div>
             <div className="mb-20 flex flex-col text-center justify-center align-center items-center">
