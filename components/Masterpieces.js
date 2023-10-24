@@ -136,7 +136,7 @@ export default function Masterpieces({ isModalOpen }) {
               </p>
             </div>
           </div>
-          <Skills skills={['NextJS', 'Tailwind', 'OpenAI', 'Beautiful Soup']}/>
+          <Skills skills={['NextJS', 'Python', 'Tailwind', 'OpenAI', 'Beautiful Soup']}/>
         </div>
       </a>
       <a href="https://youtu.be/6G-bLp-DYCk" target="_blank" rel="noopener" className='md:mt-10'>
