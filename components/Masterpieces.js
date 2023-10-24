@@ -40,7 +40,7 @@ export default function Masterpieces({ isModalOpen }) {
               <p className="text-sm leading-relaxed">Explore a comprehensive knowledge hub on machine intelligence and artificial learning, featuring in-depth articles, reading lists, and a dynamic interface for discovering related content. </p>
             </div>
           </div>
-          <Skills skills={['NextJS', 'MUI', 'Google Sheets', 'Redis', 'OpenAI']}/>
+          <Skills skills={['Python', 'JavaScript', 'NextJS', 'MUI', 'Google Sheets', 'Redis', 'OpenAI']}/>
         </div>
       </a>
 
@@ -104,7 +104,7 @@ export default function Masterpieces({ isModalOpen }) {
               </p>
             </div>
           </div>
-          <Skills skills={['React', 'Tailwind', 'chessboardjsx', 'chess.js']}/>
+          <Skills skills={['React', 'Lichess', 'Tailwind', 'chessboardjsx', 'chess.js']}/>
         </div>
       </a>
       <a href="https://cal-hacks-frontend.vercel.app/" target="_blank" rel="noopener" className='md:mt-10'>
