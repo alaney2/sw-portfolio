@@ -28,7 +28,20 @@ export default function GalacticAdventures() {
           <div className={`flex flex-col text-md md:w-3/4`}>
             <h1 className={`text-gray-300 mb-2`}>University of Illinois Urbana-Champaign</h1>
             <p className="italic mb-1">B.S. in Statistics and Computer Science</p>
-            <p className="text-xs">Major GPA: 3.88; Graduated with highest distinction</p>
+            {/* <p className="text-xs">Major GPA: 3.88; Graduated with highest distinction</p> */}
+          </div>
+        </div>
+      </a>
+
+      <a href="https://fremontunified.org/msjhs/" target="_blank" rel="noopener noreferrer" className='md:mt-4'>
+        <div className={`flex flex-col md:flex-row rounded-xl xl:px-6 py-4 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
+          <div className={`text-xs mb-2 md:mb-0 mt-1.5 mr-4 xl:mr-6 tracking-wider uppercase md:w-1/4`}>
+            2016 - 2020
+          </div>
+          <div className={`flex flex-col text-md md:w-3/4`}>
+            <h1 className={`text-gray-300 mb-2`}>Mission San Jose High School</h1>
+            {/* <p className="italic mb-1">B.S. in Statistics and Computer Science</p> */}
+            {/* <p className="text-xs">Major GPA: 3.88; Graduated with highest distinction</p> */}
           </div>
         </div>
       </a>
