@@ -8,7 +8,7 @@ export default function GalacticAdventures() {
 
   return (
     <div className={`flex flex-col text-gray-400`}>
-      <a href="https://www.cs.illinois.edu" target="_blank" rel="noopener noreferrer" className='md:mt-10'>
+      <a href="https://www.cs.illinois.edu" target="_blank" rel="noopener noreferrer" className='md:mt-16'>
         <div className={`flex flex-col md:flex-row rounded-xl xl:px-6 py-4 border-2 border-transparent ${borderColors[cursor]} hover:border-opacity-50 transition duration-300`}>
           <div className={`text-xs mb-2 md:mb-0 mt-1.5 mr-4 xl:mr-6 tracking-wider uppercase md:w-1/4`}>
             2023 - 2024
@@ -46,7 +46,7 @@ export default function GalacticAdventures() {
         </div>
       </a>
 
-      <a href="https://www.servicenow.com" target="_blank" rel="noopener noreferrer" className='md:mt-20 mt-10'>
+      <a href="https://www.servicenow.com" target="_blank" rel="noopener noreferrer" className='md:mt-24 mt-10'>
         <div className={`flex flex-col md:flex-row rounded-xl xl:px-6 py-6 border-2 border-transparent ${borderColors[cursor]} md:hover:border-opacity-50 transition duration-300`}>
           <div className={`text-xs mb-2 md:mb-0 mt-1.5 mr-4 xl:mr-6 tracking-wider uppercase md:w-1/4`}>
             May - Aug 2023

@@ -30,7 +30,7 @@ export default function Content() {
       const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.5,
+        threshold: 0.8,
       };
       const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -95,7 +95,7 @@ export default function Content() {
               <GalacticAdventures />
             </div>
             <div className="flex mb-16 md:mb-12 xl:px-8 md:py-4">
-              <p className="text-[9px] lg:text-[10px] text-gray-500 w-full">I liked <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this site&apos;s</a> neat layout</p>
+              <p className="text-[9px] lg:text-[10px] text-gray-500 w-full">Inspired by <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this portfolio</a> </p>
             </div>
             <div ref={projectsRef} className='mb-20 md:mb-24 scroll-mt-16' id="projects">
               <h1 className='text-md tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Projects' : 'Jedi Projects'}</h1>
