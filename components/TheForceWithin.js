@@ -9,15 +9,10 @@ export default function TheForceWithin({ mb }) {
   return (
     <div className={`mb-${mb} text-md leading-relaxed text-gray-400`}>
       <p className={`mb-5`}>
-        Merging technology and the Force, at the core of my interests it has always been.
-        Throughout my academic journey, I have completed three internships at tech companies and honed my skills in droid programming, hyperdrive optimization, and cloud city computing.
+      Simply dummy text of the printing and typesetting industry, Lorem Ipsum is. Since the 1500s, the industry&apos;s standard dummy text it has been, when a galley of type, an unknown printer took and scrambled it to make a type specimen book, he did. Survived it has, not only five centuries, but also into electronic typesetting, the leap it made, remaining essentially unchanged. Popularized it was in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker, including versions of Lorem Ipsum.
       </p>
       <p>
-        When not busy coding or practicing lightsaber techniques, I explore my creative side through HoloNet photography, cantina music production, and CS:GO.
-        As an aspiring {side === 'Sith' ? 'Sith Lord' : 'Jedi Knight'}, I am driven by the desire to 
-        {side === 'Sith' ? ' reshape the galaxy according to my vision, and to overcome any who stand in my way' : ' create meaningful and impactful solutions, improving lives across the galaxy'}.
-        Hesitate not to reach out, if connect or discuss potential collaborations in our quest to 
-        {side === 'Sith' ? ' harness the full potential of the dark side' : ' restore balance to the Force'}, you would like.
+      A long established fact it is, that distracted by the readable content of a page, a reader will be when looking at its layout. The point of using Lorem Ipsum, that it has a more-or-less normal distribution of letters, it is, as opposed to &apos;Content here, content here&apos; using, making it look like readable English. Many desktop publishing packages and web page editors now, Lorem Ipsum as their default model text they use, and a search for &apos;lorem ipsum&apos; many web sites still in their infancy it will uncover. Over the years, various versions have evolved, sometimes by accident, sometimes on purpose (injected humour and the like).
       </p>
     </div>
   );
