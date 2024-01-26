@@ -30,26 +30,28 @@ export default function Content() {
       const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.8,
+        threshold: 0.5,
       };
       const observer = new IntersectionObserver((entries, observer) => {
+        let isAboutInView = false;
+        let isExperienceInView = false;
+      
         entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            clearTimeout(timeoutId);
-            timeoutId = setTimeout(() => {
-              if (entry.target === aboutRef.current) {
-                setActiveSection('about')  
-              }
-              if (entry.target === experienceRef.current) {
-                setActiveSection('experience')
-              }
-              if (entry.target === projectsRef.current) {
-                setActiveSection('projects')
-              }
-            }, 0);
+          if (entry.target === aboutRef.current) {
+            isAboutInView = entry.isIntersecting;
+          }
+          if (entry.target === experienceRef.current) {
+            isExperienceInView = entry.isIntersecting;
           }
         });
-      }, options);
+      
+        if (isAboutInView) {
+          setActiveSection('about');
+        } else if (isExperienceInView) {
+          setActiveSection('experience');
+        }
+      
+      }, { threshold: [0.5] });
     
       observer.observe(aboutRef.current);
       observer.observe(experienceRef.current);
@@ -97,21 +99,24 @@ export default function Content() {
             <div className="flex mb-16 md:mb-12 xl:px-8 md:py-4">
               <p className="text-[9px] lg:text-[10px] text-gray-500 w-full">Inspired by <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this portfolio</a> </p>
             </div>
-            <div ref={projectsRef} className='mb-20 md:mb-24 scroll-mt-16' id="projects">
-              <h1 className='text-md tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Projects' : 'Jedi Projects'}</h1>
-              <Masterpieces isModalOpen={isModalOpen} />
-            </div>
-            <div className="mb-20 flex flex-col text-center justify-center align-center items-center">
-              <h1 className='text-sm tracking-wider uppercase font-semibold visible mb-12'>
-                Lightsaber Popularity
-              </h1>
-              <ColorChart />
-            </div>
-            <div ref={contactRef} className='mb-24 md:mb-0 flex justify-center scroll-mt-24' id="contact">
-              <div className="flex flex-col justify-center items-center h-full">
-                <Contact />
+            <div ref={projectsRef}>
+              <div  className='mb-20 md:mb-24 scroll-mt-16' id="projects">
+                <h1 className='text-md tracking-wider uppercase font-semibold visible md:hidden mb-8'>{side === 'Sith' ? 'Sith Projects' : 'Jedi Projects'}</h1>
+                <Masterpieces isModalOpen={isModalOpen} />
+              </div>
+              <div className="mb-20 flex flex-col text-center justify-center align-center items-center">
+                <h1 className='text-sm tracking-wider uppercase font-semibold visible mb-12'>
+                  Lightsaber Popularity
+                </h1>
+                <ColorChart />
+              </div>
+              <div ref={contactRef} className='mb-24 md:mb-0 flex justify-center scroll-mt-24' id="contact">
+                <div className="flex flex-col justify-center items-center h-full">
+                  <Contact />
+                </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
