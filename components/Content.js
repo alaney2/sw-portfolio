@@ -32,7 +32,6 @@ export default function Content() {
       const experienceTop = getTopOffset(experienceRef);
       const projectsTop = getTopOffset(projectsRef);
 
-      // Update active section based on scroll position
       if (currentScrollPosition >= aboutTop && currentScrollPosition < experienceTop) {
         setActiveSection('about');
       } else if (currentScrollPosition >= experienceTop && currentScrollPosition < projectsTop) {
@@ -42,7 +41,6 @@ export default function Content() {
       }
     };
 
-    // Debounce the scroll event for performance optimization
     let debounceTimer;
     const debounce = (func, delay) => {
       clearTimeout(debounceTimer);
