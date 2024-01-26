@@ -21,47 +21,40 @@ export default function Content() {
   const aboutRef = useRef(null);
   const experienceRef = useRef(null);
   const projectsRef = useRef(null);
-  const contactRef = useRef(null);
+
+  const getTopOffset = (ref) => ref.current ? ref.current.offsetTop : 0;
 
   useEffect(() => {
-    let timeoutId = null;
+    const handleScroll = () => {
+      const currentScrollPosition = window.scrollY;
+      
+      const aboutTop = getTopOffset(aboutRef);
+      const experienceTop = getTopOffset(experienceRef);
+      const projectsTop = getTopOffset(projectsRef);
 
-    const observeSections = () => {
-      const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5,
-      };
-      const observer = new IntersectionObserver((entries, observer) => {
-        let isAboutInView = false;
-        let isExperienceInView = false;
-      
-        entries.forEach(entry => {
-          if (entry.target === aboutRef.current) {
-            isAboutInView = entry.isIntersecting;
-          }
-          if (entry.target === experienceRef.current) {
-            isExperienceInView = entry.isIntersecting;
-          }
-        });
-      
-        if (isAboutInView) {
-          setActiveSection('about');
-        } else if (isExperienceInView) {
-          setActiveSection('experience');
-        }
-      
-      }, { threshold: [0.5] });
-    
-      observer.observe(aboutRef.current);
-      observer.observe(experienceRef.current);
-      observer.observe(projectsRef.current);
-      observer.observe(contactRef.current);
+      // Update active section based on scroll position
+      if (currentScrollPosition >= aboutTop && currentScrollPosition < experienceTop) {
+        setActiveSection('about');
+      } else if (currentScrollPosition >= experienceTop && currentScrollPosition < projectsTop) {
+        setActiveSection('experience');
+      } else if (currentScrollPosition >= projectsTop) {
+        setActiveSection('projects');
+      }
     };
 
-    observeSections();
-    return () => clearTimeout(timeoutId);
-  }, [activeSection]);
+    // Debounce the scroll event for performance optimization
+    let debounceTimer;
+    const debounce = (func, delay) => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(func, delay);
+    };
+
+    window.addEventListener('scroll', () => debounce(handleScroll, 10));
+
+    return () => {
+      window.removeEventListener('scroll', () => debounce(handleScroll, 10));
+    };
+  }, []);
 
   return (
     <div className={`z-10 mx-auto min-h-screen min-w-screen max-w-screen bg-slate-900 bg-cover py-12 md:py-16 lg:py-24 px-6 md:px-12 lg:px-20 overflow-x-hidden`}>
@@ -110,7 +103,7 @@ export default function Content() {
                 </h1>
                 <ColorChart />
               </div>
-              <div ref={contactRef} className='mb-24 md:mb-0 flex justify-center scroll-mt-24' id="contact">
+              <div className='mb-24 md:mb-0 flex justify-center scroll-mt-24' id="contact">
                 <div className="flex flex-col justify-center items-center h-full">
                   <Contact />
                 </div>
