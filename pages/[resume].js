@@ -4,7 +4,8 @@ export default function Resume() {
 export async function getServerSideProps(context) {
   return {
     redirect: {
-      destination: 'https://drive.google.com/file/d/1_e-b51U-3TW77PJf5iUKRL02oD_bxmu8/view?usp=share_link',
+      destination:
+        'https://drive.google.com/file/d/1JQWZ2o-K5NE6b75hqjp03QGDX39w3flj/view?usp=sharing',
       permanent: false,
     },
   };
