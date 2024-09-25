@@ -47,7 +47,7 @@ export default function Socials({ isModalOpen, setIsModalOpen }) {
       {showModal && (
         <Modal onClose={toggleModal}>
           <iframe
-            src="https://drive.google.com/file/d/1JQWZ2o-K5NE6b75hqjp03QGDX39w3flj/preview"
+            src={process.env.NEXT_PUBLIC_RESUME_URL || "https://drive.google.com/file/d/1PKhRlzHXVK0hFCopD7sYbI2TdFmQfn62/preview"}
             width={iframeWidth}
             height={iframeHeight}
             allow="autoplay"
