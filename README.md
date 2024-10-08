@@ -1,4 +1,4 @@
-# sw-portfolio
+# star wars portfolio
 
 Inspired by [this](https://brittanychiang.com).
 
