@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <div className={`text-lg md:text-2xl`}>
       <div className={`py-2 md:py-4 px-4 md:px-8 border-2 md:border-transparent rounded-xl ${borderColorsAlways[cursor]} hover:border-opacity-50 ${textColors[cursor]} transition duration-500`}>
-        <a href="mailto:alanyao.training@gmail.com">{side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}</a>
+        <a href="mailto:alan@cribbly.io">{side === 'Sith' ? 'Contact the First Order' : 'Contact the Resistance'}</a>
       </div>
     </div>
   );

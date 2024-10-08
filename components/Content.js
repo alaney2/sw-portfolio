@@ -64,7 +64,7 @@ export default function Content() {
               <Link href="/">
                 <h1 className={`${styles.starJedi} text-4xl sm:text-5xl md:mt-24 tracking-widest text-gray-100`}>Alan Yao</h1>
               </Link>
-              <h2 className={`my-5 text-lg text-gray-200`}> {`CS Graduate Student at UIUC`}</h2>
+              <h2 className={`my-5 text-lg text-gray-200`}> {`Software Engineer at ServiceNow`}</h2>
               <p className={`text-gray-400 text-md font-light`}> Bridging fluidity, flexibility, and functionality with finessive code. </p>
               <div className="hidden md:flex">
                 <Nav activeSection={activeSection} setActiveSection={setActiveSection} />
@@ -86,9 +86,6 @@ export default function Content() {
             <div ref={experienceRef} className='mb-12 md:mb-12 scroll-mt-24' id="experience">
               <h1 className='text-md tracking-wider uppercase font-semibold visible md:hidden mb-8'>Galactic Adventures</h1>
               <GalacticAdventures />
-            </div>
-            <div className="flex mb-16 md:mb-12 xl:px-8 md:py-4">
-              <p className="text-[9px] lg:text-[10px] text-gray-500 w-full">Inspired by <a href="https://www.brittanychiang.com" target="_blank" rel="noopener noreferrer" className="underline">this portfolio</a> </p>
             </div>
             <div ref={projectsRef}>
               <div  className='mb-20 md:mb-24 scroll-mt-16' id="projects">
